@@ -41,25 +41,6 @@ io.on('connection', (socket) => {
   })
 });
 
-/*
-MAIN PART. Data processing
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 server.listen(3000, () => {
   console.log('listening on *:3000');
 });

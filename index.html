@@ -500,8 +500,6 @@
                 text-align: right;
             }
 
-
-
             /*SPECTATE*/
             #sp_player {
                 width: 25em;
@@ -615,7 +613,7 @@
                 right: 0;
                 top: -1.75em;
                 transform: scale(0.7);
-                fill: #101841;
+                fill: #fff;
             }
 
             #sp_kill_2 {
@@ -624,7 +622,7 @@
                 right: 1.5em;
                 top: -1.75em;
                 transform: scale(0.7);
-                fill: #101841;
+                fill: #fff;
             }
 
             #sp_kill_3 {
@@ -633,7 +631,7 @@
                 right: 3em;
                 top: -1.75em;
                 transform: scale(0.7);
-                fill: #101841;
+                fill: #fff;
             }
 
             #sp_kill_4 {
@@ -642,7 +640,7 @@
                 right: 4.5em;
                 top: -1.75em;
                 transform: scale(0.7);
-                fill: #101841;
+                fill: #fff;
             }
 
             #sp_kill_5 {
@@ -651,7 +649,7 @@
                 right: 6em;
                 top: -1.75em;
                 transform: scale(0.7);
-                fill: #101841;
+                fill: #fff;
             }
 
             
@@ -1112,7 +1110,6 @@
             const weapons_knives = ['bayonet', 'm9_bayonet', 'butterfly', 'falchion', 'flip', 'gut', 'tactical', 'karambit', 'survival_bowie', 'knife_push', 'knife_t', 'knife_ct', 'knifegg', 'knife_ursus', 'knife_gypsy_jackknife', 'knife_stiletto', 'knife_widowmaker','knife_canis', 'knife_cord', 'knife_skeleton', 'knife_outdoor'];
             
             const weapons_grenades = ['decoy', 'flashbang', 'smokegrenade', 'hegrenade', 'molotov', 'incgrenade'];
-
 
             socket.on('getData', (data) => {
                 data = JSON.parse(data);
@@ -1588,29 +1585,49 @@
                         $('#p9').css('width', '17em');
                         $('#p0').css('width', '17em');
 
+                        $('#p1 .kad_wrap').show();
                         $('#p1 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p2 .kad_wrap').show();
                         $('#p2 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p3 .kad_wrap').show();
                         $('#p3 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p4 .kad_wrap').show();
                         $('#p4 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p5 .kad_wrap').show();
                         $('#p5 .kad_wrap').animate({width:'7em'}, 500);
 
+                        $('#p6 .kad_wrap').show();
                         $('#p6 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p7 .kad_wrap').show();
                         $('#p7 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p8 .kad_wrap').show();
                         $('#p8 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p9 .kad_wrap').show();
                         $('#p9 .kad_wrap').animate({width:'7em'}, 500);
+                        $('#p0 .kad_wrap').show();
                         $('#p0 .kad_wrap').animate({width:'7em'}, 500);
                     } else {
                         $('#p1 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p1 .kad_wrap').delay(1000).hide();
                         $('#p2 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p2 .kad_wrap').delay(1000).hide();
                         $('#p3 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p3 .kad_wrap').delay(1000).hide();
                         $('#p4 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p4 .kad_wrap').delay(1000).hide();
                         $('#p5 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p5 .kad_wrap').delay(1000).hide();
 
                         $('#p6 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p6 .kad_wrap').delay(1000).hide();
                         $('#p7 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p7 .kad_wrap').delay(1000).hide();
                         $('#p8 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p8 .kad_wrap').delay(1000).hide();
                         $('#p9 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p9 .kad_wrap').delay(1000).hide();
                         $('#p0 .kad_wrap').delay(500).animate({width:'0em'}, 500);
+                        $('#p0 .kad_wrap').delay(1000).hide();
                     }
                 }
 
@@ -2062,9 +2079,6 @@
                     $('#p0 .weapon').empty().append(svgs[sidePlayersWeapons.player0.primary]);
                 }
 
-
-
-
                 let p1_grenades = [];
                 let p2_grenades = [];
                 let p3_grenades = [];
@@ -2236,9 +2250,6 @@
                     $(`#p0 .gr_slot${i}`).empty().append(svgs[p0_grenades[i - 1]]);
                 }
             });
-
-            
-                        
                 // $('.kad_wrap').hide();
                 /*
                 // $('#sp_weapon').empty().append(chooseWeapon());
@@ -2325,6 +2336,5 @@
                 // }
                 */
         </script>
-        
     </body>
 </html>
