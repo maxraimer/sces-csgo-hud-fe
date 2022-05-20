@@ -7,3 +7,6 @@
 3. *Was found at Navi against Heroic match on the Inferno map on PGL Major.* S1mple's AWP had "undefined" ammo reserve. Only S1mple. Only on Inferno.
 4. *The same match, but Ancient.* Player of Heroic had AK, spectator window showed AK, but sidebar showed his secondary weapon.
 5. ~~The length of the HP-bar of the sidebars counting wrong way.~~
+
+### Recently added:
+1. Tactical timeout bar.
