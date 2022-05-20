@@ -1,5 +1,4 @@
-# csgo-hud-sces
-SCES CS:GO GOTV Spectator hud.
+# SCES CS:GO GOTV Spectator hud
 
 
 FOUND BUT NOT FIXED BUGS:
