@@ -8,6 +8,7 @@
 2. Add technical pause bar.
 3. Optimise the hud.
 4. Add defusing bar to player under spectate.
+5. Add winning bar
 
 ### Known bugs:
 1. When the score-by-map is 1:0, and the first half of the 2nd map is played, both teams "get point", like both of them won first map.
