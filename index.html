@@ -134,7 +134,7 @@
                 width: 14em;
                 height: 2em;
                 background: #101841;
-                top: 4em;
+                top: 4.2em;
                 left: calc(50% - 7em);
             }
 
@@ -164,7 +164,7 @@
 
             #bomb-timer {
                 width: 0;
-                height: 0.2em;
+                height: 0.3em;
                 background: red;
                 left: 50%;
                 top: 3.6em;
@@ -173,10 +173,10 @@
 
             #defuse-timer {
                 width: 0;
-                height: 0.2em;
+                height: 0.3em;
                 background: dodgerblue;
                 left: 50%;
-                top: 3.8em;
+                top: 3.9em;
                 transform: translateX(-50%);
             }
 
@@ -675,11 +675,54 @@
                 background: linear-gradient(115.01deg,#021d1b 0%, #0a4b40 25%, #186a4f 50%,#21613a 75%, #226d2f 100%);
             }
 
+            #partner_right {
+                width: 9.5em;
+                height: 4em;
+                padding: 0.25em;
+                background: #101841cc;
+                right: 1em;
+                bottom: 25.5em;
+            }
+
+            #partner_right img {
+                height: inherit;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #teamTimeout {
+                width: 13em;
+                height: 2.5em;
+                padding: 0.25em;
+                background: #101841cc;
+                right: 1em;
+                top: 0.6em;
+            }
+
+            #timeoutBy {
+                width: 2.5em;
+                height: 2.5em;
+            }
+
+            #to_title {
+                top: 0.3em;
+                left: 3em;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            #to_subtitle {
+                top: 1.4em;
+                left: 3em;
+                color: #fff;
+            }
+
         </style>
     </head>
     <body>
         <div id="sp_mark"></div>
-        <div id="log"></div>
+        <!-- <div id="log"></div> -->
+        <div id="partner_right"><img src="https://i.ibb.co/94PPHzb/logo-name-white-TRANSPARENT.png"></div>
 
         <div id="left_team_logo"><img src="https://i.ibb.co/zJ3THxn/ct.png" id="left_logo"></div>
         <div id="right_team_logo"><img src="https://i.ibb.co/92tLT7Z/t.png" id="right_logo"></div>
@@ -926,6 +969,13 @@
                 <div id="sp_goal"></div>
             </div>
         </div>
+
+        <div id="teamTimeout">
+            <img id="timeoutBy" src="">
+            <div id="to_title">Name</div>
+            <div id="to_subtitle">Tactical timeout (2/4)</div>
+        </div>
+
         <div id="bg_end"></div>
 
         <script src="/socket.io/socket.io.js"></script>
@@ -933,6 +983,8 @@
             var socket = io();
             let bomb_state_local;
             let round_state_local;
+
+            hideTactical();
             
             function resetBomb() {
                 $('#bomb-timer').hide();
@@ -941,6 +993,12 @@
                 $('#bomb-timer').css('width', '0em');
             }
 
+            function hideTactical() {
+                $('#teamTimeout').hide();
+                $('#teamTimeout').css('width', '0em');
+                $('#bomb-timer').css('overflow', 'hidden');
+            }
+         
             const teams = [
                 {name: "CPH", color: "#ba7a3f", logo: "https://i.ibb.co/PWQ55Lb/copenhagen-flames.png"},    //0
                 {name: "Ence", color: "#ff6100", logo: "https://i.ibb.co/BKZcxLt/ence.png"},                //1
@@ -1115,7 +1173,7 @@
                 data = JSON.parse(data);
 
                 //del before prod
-                // console.log(data);
+                console.log(data);
                 //del before prod
 
                 if (data.map.num_matches_to_win_series == 0) {
@@ -1132,8 +1190,22 @@
                 let timerMinutes = Math.floor(countdown / 60);
                 let timerSeconds = countdown % 60;
                 let countdownToTimer = timerMinutes + ':' + ((timerSeconds < 10) ? "0" + timerSeconds : timerSeconds); 
+
+                if (countdown < 0) {
+                    $('#timer').empty();
+                } else {
+                    $('#timer').empty().append(countdownToTimer);
+                }
                 
-                $('#timer').empty().append(countdownToTimer);
+                if (data.phase_countdowns.phase == 'bomb') {
+                    $('#timer').css('color', '#ff0000');
+                } else if (data.phase_countdowns.phase == 'freezetime' || data.round.phase == 'freezetime') {
+                    $('#timer').css('color', '#daa520');
+                } else if (data.bomb.state == 'defusing') {
+                    $('#timer').css('color', 'dodgerblue');
+                } else {
+                    $('#timer').css('color', '#fff');
+                }
 
                 //BOMB
             
@@ -1283,10 +1355,16 @@
                     $('#right_team_score').empty().append(data.map.team_t.score);
 
                     if (data.map.team_ct.matches_won_this_series == 1) {
-                    $('#r2').css('background', '#293fad');
+                        $('#r2').css('background', '#293fad');
+                    } else if (data.map.team_ct.matches_won_this_series == 0) {
+                        $('#r2').css('background', '#101841');
+                        $('#r2').attr('style', '');
                     }
                     if (data.map.team_t.matches_won_this_series == 1) {
                         $('#r4').css('background', '#293fad');
+                    } else if (data.map.team_t.matches_won_this_series == 0){
+                        $('#r4').css('background', '#101841');
+                        $('#r4').attr('style', '');
                     }
 
                     $('#left_side .side_logo').attr('src', 'https://i.ibb.co/zJ3THxn/ct.png');
@@ -1297,6 +1375,30 @@
                     $('#right_side .side').empty().append('Terrorists');
                     $('#right_side .side').css('color', '#c77d38');
 
+                    if (data.phase_countdowns.phase == 'timeout_t') {
+                        $('#teamTimeout').show();
+                        $('#teamTimeout').animate({width:'13em'}, 500);
+                        $('#timeoutBy').attr('src', teams[team_right_id].logo);
+
+                        
+                        $('#to_title').empty().append(teams[team_right_id].name);
+                        $('#to_subtitle').empty().append(`Tactical timeout (${4 - data.map.team_t.timeouts_remaining}/4)`);
+
+                        setTimeout(() => {$('#teamTimeout').finish()}, 600);
+                    } else if (data.phase_countdowns.phase == 'timeout_ct') {
+                        $('#teamTimeout').show();
+                        $('#teamTimeout').animate({width:'13em'}, 500);
+                        $('#timeoutBy').attr('src', teams[team_left_id].logo);
+                        
+                        $('#to_title').empty().append(teams[team_left_id].name);  
+                        $('#to_subtitle').empty().append(`Tactical timeout (${4 - data.map.team_ct.timeouts_remaining}/4)`);
+
+                        setTimeout(() => {$('#teamTimeout').finish()}, 600);
+                    } else {
+                        $('#teamTimeout').animate({width:'0em'}, 1000);                      
+                        setTimeout(() => {$('#teamTimeout').finish(); hideTactical()}, 1100);
+                        
+                    }
                 } else if ((data.map.round >= 15 && data.map.round < 33) || data.map.round >=39) {
                     
                     $('#right_name').empty().append(teams[team_left_id].name);
@@ -1334,6 +1436,29 @@
                     $('#left_side .side_logo').attr('src', 'https://i.ibb.co/92tLT7Z/t.png');
                     $('#left_side .side').empty().append('Terrorists');
                     $('#left_side .side').css('color', '#c77d38');
+
+                    if (data.phase_countdowns.phase == 'timeout_t') {
+                        $('#teamTimeout').show();
+                        $('#teamTimeout').animate({width:'13em'}, 500);
+                        $('#timeoutBy').attr('src', teams[team_right_id].logo);
+                        
+                        $('#to_title').empty().append(teams[team_right_id].name);
+                        $('#to_subtitle').empty().append(`Tactical timeout (${4 - data.map.team_t.timeouts_remaining}/4)`);
+
+                        setTimeout(() => {$('#teamTimeout').finish()}, 600);
+                    } else if (data.phase_countdowns.phase == 'timeout_ct') {
+                        $('#teamTimeout').show();
+                        $('#teamTimeout').animate({width:'13em'}, 500);
+                        $('#timeoutBy').attr('src', teams[team_left_id].logo);
+                        
+                        $('#to_title').empty().append(teams[team_left_id].name);  
+                        $('#to_subtitle').empty().append(`Tactical timeout (${4 - data.map.team_ct.timeouts_remaining}/4)`);
+
+                        setTimeout(() => {$('#teamTimeout').finish()}, 600);
+                    } else {
+                        $('#teamTimeout').animate({width:'0em'}, 1000);   
+                        setTimeout(() => {$('#teamTimeout').finish(); hideTactical()}, 1100);
+                    }
                 }
 
                 if (data.map.team_ct.score >= 24 && data.map.team_t.score >= 24) {
@@ -1722,38 +1847,27 @@
                     $('#p0 .kevlar_slot').empty()
                 }
 
-                if (player1.state.defusekit && player1.state.defusekit == true) {$('#p1 .goal_equip').empty().append(svgs.defuser)};
-                if (player2.state.defusekit && player2.state.defusekit == true) {$('#p2 .goal_equip').empty().append(svgs.defuser)};
-                if (player3.state.defusekit && player3.state.defusekit == true) {$('#p3 .goal_equip').empty().append(svgs.defuser)};
-                if (player4.state.defusekit && player4.state.defusekit == true) {$('#p4 .goal_equip').empty().append(svgs.defuser)};
-                if (player5.state.defusekit && player5.state.defusekit == true) {$('#p5 .goal_equip').empty().append(svgs.defuser)};
-                if (player6.state.defusekit && player6.state.defusekit == true) {$('#p6 .goal_equip').empty().append(svgs.defuser)};
-                if (player7.state.defusekit && player7.state.defusekit == true) {$('#p7 .goal_equip').empty().append(svgs.defuser)};
-                if (player8.state.defusekit && player8.state.defusekit == true) {$('#p8 .goal_equip').empty().append(svgs.defuser)};
-                if (player9.state.defusekit && player9.state.defusekit == true) {$('#p9 .goal_equip').empty().append(svgs.defuser)};
-                if (player0.state.defusekit && player0.state.defusekit == true) {$('#p0 .goal_equip').empty().append(svgs.defuser)};
+                $('#p1 .hp-bar').css('width', `${14 * player1.state.health / 100}em`);
+                $('#p2 .hp-bar').css('width', `${14 * player2.state.health / 100}em`);
+                $('#p3 .hp-bar').css('width', `${14 * player3.state.health / 100}em`);
+                $('#p4 .hp-bar').css('width', `${14 * player4.state.health / 100}em`);
+                $('#p5 .hp-bar').css('width', `${14 * player5.state.health / 100}em`);
+                $('#p6 .hp-bar').css('width', `${14 * player6.state.health / 100}em`);
+                $('#p7 .hp-bar').css('width', `${14 * player7.state.health / 100}em`);
+                $('#p8 .hp-bar').css('width', `${14 * player8.state.health / 100}em`);
+                $('#p9 .hp-bar').css('width', `${14 * player9.state.health / 100}em`);
+                $('#p0 .hp-bar').css('width', `${14 * player0.state.health / 100}em`);
 
-                $('#p1 .hp-bar').css('width', `calc(14em - ${100 - player1.state.health}%)`);
-                $('#p2 .hp-bar').css('width', `calc(14em - ${100 - player2.state.health}%)`);
-                $('#p3 .hp-bar').css('width', `calc(14em - ${100 - player3.state.health}%)`);
-                $('#p4 .hp-bar').css('width', `calc(14em - ${100 - player4.state.health}%)`);
-                $('#p5 .hp-bar').css('width', `calc(14em - ${100 - player5.state.health}%)`);
-                $('#p6 .hp-bar').css('width', `calc(14em - ${100 - player6.state.health}%)`);
-                $('#p7 .hp-bar').css('width', `calc(14em - ${100 - player7.state.health}%)`);
-                $('#p8 .hp-bar').css('width', `calc(14em - ${100 - player8.state.health}%)`);
-                $('#p9 .hp-bar').css('width', `calc(14em - ${100 - player9.state.health}%)`);
-                $('#p0 .hp-bar').css('width', `calc(14em - ${100 - player0.state.health}%)`);
-
-                if (player1.state.health <= 0) {$('#p1').css('width', '9em'); $('#p1 .goal_equip').empty(); $('#p1 .hp-bar').css('background', 'transparent')};
-                if (player2.state.health <= 0) {$('#p2').css('width', '9em'); $('#p2 .goal_equip').empty(); $('#p2 .hp-bar').css('background', 'transparent')};
-                if (player3.state.health <= 0) {$('#p3').css('width', '9em'); $('#p3 .goal_equip').empty(); $('#p3 .hp-bar').css('background', 'transparent')};
-                if (player4.state.health <= 0) {$('#p4').css('width', '9em'); $('#p4 .goal_equip').empty(); $('#p4 .hp-bar').css('background', 'transparent')};
-                if (player5.state.health <= 0) {$('#p5').css('width', '9em'); $('#p5 .goal_equip').empty(); $('#p5 .hp-bar').css('background', 'transparent')};
-                if (player6.state.health <= 0) {$('#p6').css('width', '9em'); $('#p6 .goal_equip').empty(); $('#p6 .hp-bar').css('background', 'transparent')};
-                if (player7.state.health <= 0) {$('#p7').css('width', '9em'); $('#p7 .goal_equip').empty(); $('#p7 .hp-bar').css('background', 'transparent')};
-                if (player8.state.health <= 0) {$('#p8').css('width', '9em'); $('#p8 .goal_equip').empty(); $('#p8 .hp-bar').css('background', 'transparent')};
-                if (player9.state.health <= 0) {$('#p9').css('width', '9em'); $('#p9 .goal_equip').empty(); $('#p9 .hp-bar').css('background', 'transparent')};
-                if (player0.state.health <= 0) {$('#p0').css('width', '9em'); $('#p0 .goal_equip').empty(); $('#p0 .hp-bar').css('background', 'transparent')};
+                if (player1.state.health <= 20)  $('#p1 .hp-bar').css('background', 'darkred');
+                if (player2.state.health <= 20)  $('#p2 .hp-bar').css('background', 'darkred');
+                if (player3.state.health <= 20)  $('#p3 .hp-bar').css('background', 'darkred');
+                if (player4.state.health <= 20)  $('#p4 .hp-bar').css('background', 'darkred');
+                if (player5.state.health <= 20)  $('#p5 .hp-bar').css('background', 'darkred');
+                if (player6.state.health <= 20)  $('#p6 .hp-bar').css('background', 'darkred');
+                if (player7.state.health <= 20)  $('#p7 .hp-bar').css('background', 'darkred');
+                if (player8.state.health <= 20)  $('#p8 .hp-bar').css('background', 'darkred');
+                if (player9.state.health <= 20)  $('#p9 .hp-bar').css('background', 'darkred');
+                if (player0.state.health <= 20)  $('#p0 .hp-bar').css('background', 'darkred');
 
                 if (player1.state.health == 0) {
                     $('#p1 .hp-text').css('background', 'transparent');
@@ -1938,6 +2052,28 @@
                         $('#p0 .goal_equip').empty();
                     }
                 }
+
+                if (player1.state.defusekit && player1.state.defusekit == true) {$('#p1 .goal_equip').empty().append(svgs.defuser)};
+                if (player2.state.defusekit && player2.state.defusekit == true) {$('#p2 .goal_equip').empty().append(svgs.defuser)};
+                if (player3.state.defusekit && player3.state.defusekit == true) {$('#p3 .goal_equip').empty().append(svgs.defuser)};
+                if (player4.state.defusekit && player4.state.defusekit == true) {$('#p4 .goal_equip').empty().append(svgs.defuser)};
+                if (player5.state.defusekit && player5.state.defusekit == true) {$('#p5 .goal_equip').empty().append(svgs.defuser)};
+                if (player6.state.defusekit && player6.state.defusekit == true) {$('#p6 .goal_equip').empty().append(svgs.defuser)};
+                if (player7.state.defusekit && player7.state.defusekit == true) {$('#p7 .goal_equip').empty().append(svgs.defuser)};
+                if (player8.state.defusekit && player8.state.defusekit == true) {$('#p8 .goal_equip').empty().append(svgs.defuser)};
+                if (player9.state.defusekit && player9.state.defusekit == true) {$('#p9 .goal_equip').empty().append(svgs.defuser)};
+                if (player0.state.defusekit && player0.state.defusekit == true) {$('#p0 .goal_equip').empty().append(svgs.defuser)};
+                
+                if (player1.state.health <= 0) {$('#p1').css('width', '9em'); $('#p1 .goal_equip').empty(); $('#p1 .hp-bar').css('background', 'transparent')};
+                if (player2.state.health <= 0) {$('#p2').css('width', '9em'); $('#p2 .goal_equip').empty(); $('#p2 .hp-bar').css('background', 'transparent')};
+                if (player3.state.health <= 0) {$('#p3').css('width', '9em'); $('#p3 .goal_equip').empty(); $('#p3 .hp-bar').css('background', 'transparent')};
+                if (player4.state.health <= 0) {$('#p4').css('width', '9em'); $('#p4 .goal_equip').empty(); $('#p4 .hp-bar').css('background', 'transparent')};
+                if (player5.state.health <= 0) {$('#p5').css('width', '9em'); $('#p5 .goal_equip').empty(); $('#p5 .hp-bar').css('background', 'transparent')};
+                if (player6.state.health <= 0) {$('#p6').css('width', '9em'); $('#p6 .goal_equip').empty(); $('#p6 .hp-bar').css('background', 'transparent')};
+                if (player7.state.health <= 0) {$('#p7').css('width', '9em'); $('#p7 .goal_equip').empty(); $('#p7 .hp-bar').css('background', 'transparent')};
+                if (player8.state.health <= 0) {$('#p8').css('width', '9em'); $('#p8 .goal_equip').empty(); $('#p8 .hp-bar').css('background', 'transparent')};
+                if (player9.state.health <= 0) {$('#p9').css('width', '9em'); $('#p9 .goal_equip').empty(); $('#p9 .hp-bar').css('background', 'transparent')};
+                if (player0.state.health <= 0) {$('#p0').css('width', '9em'); $('#p0 .goal_equip').empty(); $('#p0 .hp-bar').css('background', 'transparent')};
 
                 for (let p1w = 0; p1w < Object.keys(player1.weapons).length; p1w++) {
                     if (weapons_primary.includes(player1.weapons['weapon_' + p1w].name.split('').splice(7,20).join(''))) {
