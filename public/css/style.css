@@ -1,0 +1,829 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    user-select: none;
+}
+
+div {
+    position: absolute;
+}
+
+/* HEADER */
+
+#left_team_logo {
+    width: 3em;
+    height: 3em;
+    background: dodgerblue;
+    background-size: cover;
+    top: 0.5em;
+    right: calc(50% + 22em);
+}
+
+#right_team_logo {
+    width: 3em;
+    height: 3em;
+    background: goldenrod;
+    background-size: cover;
+    top: 0.5em;
+    left: calc(50% + 22em);
+}
+
+#left_team_logo img, #right_team_logo img {
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.25em;
+}
+
+#left_team_name {
+    width: 15em;
+    height: 1em;
+    background: #101040;
+    top: 0.5em;
+    right: calc(50% + 7em);
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+    line-height: 1.2em;
+}
+
+#right_team_name {
+    width: 15em;
+    height: 1em;
+    background: #101040;
+    top: 0.5em;
+    left: calc(50% + 7em);
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+    line-height: 1.2em;
+}
+
+.teamname {
+    font-size: 1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#left_team_score {
+    width: 2em;
+    height: calc(1.4em - 6px);
+    background: #101040;
+    top: 0.25em;
+    right: calc(50% + 1.5em);
+    border-top: 3px solid dodgerblue;
+    border-bottom: 3px solid dodgerblue;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0.1em;
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+#right_team_score {
+    width: 2em;
+    height: calc(1.4em - 6px);
+    background: #101040;
+    top: 0.25em;
+    left: calc(50% + 1.5em);
+    border-top: 3px solid goldenrod;
+    border-bottom: 3px solid goldenrod;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0.1em;
+    color: goldenrod;
+    font-weight: 700;
+}
+
+#match_status {
+    width: 6em;
+    height: 3em;
+    background: #101040;
+    top: 0.5em;
+    left: calc(50% - 3em);
+}
+
+#timer {
+    font-size: 1.5em;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 0.05em;
+}
+
+#round {
+    color: #fff;
+    width: 6em;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1.7em;
+}
+
+#bomb_timer {
+    width: 0;
+    height: 0.25em;
+    background: red;
+    left: 50%;
+    top: 3.5em;
+    transform: translateX(-50%);
+}
+
+#defuse_timer {
+    width: 0;
+    height: 0.25em;
+    background: dodgerblue;
+    left: 50%;
+    top: 3.75em;
+    transform: translateX(-50%);
+}
+
+#series {
+    width: 14em;
+    height: 2em;
+    background: #101040;
+    top: 4em;
+    left: calc(50% - 7em);
+}
+
+.circle {
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    height: 1em;
+    border: 2px solid #293fad;
+    border-radius: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#format {
+    display: inline-block;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#c1 {left: 0.75em;}
+#c2 {left: 2.25em;}
+#c3 {right: 2.25em;}
+#c4 {right: 0.75em;}
+
+/* HEADER */
+
+/* SPECTATE */
+
+#spec_bar {
+    width: 25em;
+    height: 5em;
+    left: 50%;
+    bottom: 1em;
+    transform: translateX(-50%) scale(1.1);
+}
+
+#spec_player_photo {
+    position: absolute;
+    bottom: 4em;
+    height: 10em;
+    left: -1em;
+}
+
+.spec_kills {
+    width: 1.5em;
+    height: 1.5em;
+    transform: scale(0.7);
+    fill: #fff;
+    top: -1.75em;
+
+}
+
+#spec_kill_1 {right: 0;}
+#spec_kill_2 {right: 1.5em;}
+#spec_kill_3 {right: 3em;}
+#spec_kill_4 {right: 4.5em;}
+#spec_kill_5 {right: 6em;}
+
+#spec_primary_line {
+    width: 25em;
+    height: 3em;
+    top: 0;
+    background: #101040;
+}
+
+#spec_primary_line img {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.25em;
+}
+
+#spec_name {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    left: 2.25em;
+    top: 0.4em;
+}
+
+#spec_weapon {
+    filter: invert(1);
+    text-align: right;
+    right: 3.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#spec_ammo {
+    color: #fff;
+    right: 0.3em;
+    bottom: 0.1em;
+}
+
+#spec_secondary_line {
+    width: 18em;
+    height: 2em;
+    background: #101040cc;
+    bottom: 0;
+    left: calc(50% - 9em);
+}
+
+#spec_kad_title {
+    font-size: 0.5em; 
+    color: #fff; 
+    top:15%; 
+    left: 1em;
+}
+
+#spec_kad {
+    color: #fff; 
+    top:35%; 
+    left: 0.5em;
+}
+
+#spec_hp_wrap {
+    filter: invert(1);
+    width: 1em;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+#spec_player_hp {
+    position: absolute;
+    right: 1.5em;
+    top: -0.15em;
+    text-align: right;
+}
+
+#spec_armor_wrap {
+    filter: invert(1);
+    width: 1em;
+    top: 0.3em;
+    right: 4em;
+}
+
+#spec_player_armor {
+    position: absolute;
+    right: 1.5em;
+    top: 0.05em;
+    text-align: right;
+}
+
+#spec_bomb {
+    filter: invert(1);
+    width: 1em;
+    right: 7.5em;
+    top: 0.4em;
+}
+
+#spec_defuser {
+    filter: invert(1);
+    width: 1em;
+    right: 7.5em;
+    top: 0.4em;
+}
+
+#defusing_bar {
+    width: 15em;
+    height: 4em;
+    bottom: 18em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#defusing_timer_background {
+    width: 15em;
+    height: 4em;
+    background: #101040cc;
+}
+
+#defusing_timer_line {
+    width: 0em;
+    height: 4em;
+    background: #101040;
+}
+
+#defusing_name {
+    font-size: 1.5em;
+    color: #fff;
+    left: 3.7em;
+    top: 0.3em;
+}
+
+#defusing_text {
+    font-size: 0.8em;
+    color: #fff;
+    left: 7em;
+    top: 2.8em;
+}
+
+#defusing_timer {
+    font-size: 1.5em;
+    color: dodgerblue;
+    width: 3em;
+    left: 0.3em;
+    top: 0.7em;
+    text-align: center;
+}
+
+
+/* SPECTATE */
+
+/* SIDEBARS */
+
+.team_info {
+    width: 18em;
+    height: 3.5em;
+    background: #101040cc;
+    top: 25em;
+}
+
+#left_team_info {
+    left: 0.5em;
+    color: dodgerblue;
+}
+
+#right_team_info {
+    right: 0.5em;
+    color: goldenrod;
+}
+
+.team_side_logo {
+    position: absolute;
+    width: 2.8em;
+    height: 2.8em;
+    margin: 0.35em;
+}
+
+#right_team_info .team_side_logo {
+    right: 0;
+}
+
+.team_money_text, .team_equip_text {
+    font-size: 0.8em;
+}
+
+.team_money_value, .team_equip_value {
+    font-size: 1.4em;
+}
+
+#left_team_info .team_money_text {
+    left: 5em;
+    top: 0.7em;
+}
+
+#left_team_info .team_money_value {
+    left: 2.85em;
+    top: 0.9em;
+}
+
+#left_team_info .team_equip_text {
+    left: 13em;
+    top: 0.7em;
+}
+
+#left_team_info .team_equip_value {
+    left: 7.4em;
+    top: 0.9em;
+}
+
+#right_team_info .team_money_text {
+    right: 5em;
+    top: 0.7em;
+}
+
+#right_team_info .team_money_value {
+    right: 2.85em;
+    top: 0.9em;
+    text-align: right;
+}
+
+#right_team_info .team_equip_text {
+    right: 13em;
+    top: 0.7em;
+}
+
+#right_team_info .team_equip_value {
+    right: 7.4em;
+    top: 0.9em;
+    text-align: right;
+}
+
+.player {
+    width: 18em;
+    height: 3.5em;
+    background: #101040cc;
+}
+
+#p1 {left: 0.5em; top: 29em;}
+#p2 {left: 0.5em; top: 33em;}
+#p3 {left: 0.5em; top: 37em;}
+#p4 {left: 0.5em; top: 41em;}
+#p5 {left: 0.5em; top: 45em;}
+#p6 {right: 0.5em; top: 29em;}
+#p7 {right: 0.5em; top: 33em;}
+#p8 {right: 0.5em; top: 37em;}
+#p9 {right: 0.5em; top: 41em;}
+#p0 {right: 0.5em; top: 45em;}
+
+.player.left .hp_text {
+    width: 2.5em;
+    height: 1em;
+    left: 0;
+    background: dodgerblue;
+    text-align: center;
+    padding: 0.35em 0 0.65em 0;
+    color: #fff;
+}
+
+.player.left .hp_bar {
+    width: 15.5em;
+    height: 1em;
+    left: 2.5em;
+    background: dodgerblue;
+    text-align: center;
+    padding: 0.35em 0 0.65em 0;
+    color: #fff;
+}
+
+.player.left .nickname {
+    color: #fff;
+    font-size: 1.2em;
+    left: 2.3em;
+    padding-top: 0.3em;
+    font-weight: 700;
+}
+
+.player.left .money {
+    color: #fff;
+    left: 1.5em;
+    padding-top: 2.15em;
+}
+
+.player.left .equip {
+    width: 1em;
+    height: 1em;
+    bottom: 0.25em;
+    left: 6.75em;
+    fill: #fff;
+}
+
+.player.left .tabpos {
+    color: #778;
+    bottom: 0.2em;
+    left: 0.2em;
+}
+
+.player.left .primary_weapon {
+    padding-top: 0.25em;
+    filter: invert(1);
+    right: 0.25em;
+    text-align: right;
+}
+
+.player.left .secondary_weapon {
+    padding-top: 2.25em;
+    filter: invert(1);
+    right: 0.25em;
+    text-align: right;
+}
+
+.player.left .kevlar_slot {
+    filter: invert(1);
+    color: #fff;
+    left: 5.5em;
+    padding-top: 2.3em;
+    transform: scale(0.8);
+}
+
+.player.left .gr_slot1 {
+    filter: invert(1);
+    color: #fff;
+    right: 3.5em;
+    padding-top: 2.4em;
+    transform: scale(0.8);
+}
+
+.player.left .gr_slot2 {
+    filter: invert(1);
+    color: #fff;
+    right: 4.5em;
+    padding-top: 2.4em;
+    transform: scale(0.8);
+}
+
+.player.left .gr_slot3 {
+    filter: invert(1);
+    color: #fff;
+    right: 5.5em;
+    padding-top: 2.4em;
+    transform: scale(0.8);
+}
+
+.player.left .gr_slot4 {
+    filter: invert(1);
+    color: #fff;
+    right: 6.5em;
+    padding-top: 2.4em;
+    transform: scale(0.8);
+}
+
+.player.left .kad_wrap {
+    background: #101040cc;
+    width: 7em;
+    height: 3.5em;
+    left: 18em;
+}
+
+.player.left .kad_span {
+    position: absolute;
+    left: 0.5em;
+    top: 0.4em;
+    color: #fff;
+}
+
+.player.left .kad {
+    font-size: 1.5em;
+    left: 0.3em;
+    top: 1em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.player.left .kills {
+    left: 18.5em;
+    width: 3em;
+    top: 1.1em;
+}
+
+.player.left .kills svg {
+    fill: #fff;
+}
+
+.player.left .kill_count {
+    color: #fff;
+    vertical-align: top;
+}
+
+.player.right .hp_text {
+    width: 2.5em;
+    height: 1em;
+    right: 0;
+    background: goldenrod;
+    text-align: center;
+    padding: 0.35em 0 0.65em 0;
+    color: #fff;
+}
+
+.player.right .hp_bar {
+    width: 15.5em;
+    height: 1em;
+    right: 2.5em;
+    background: goldenrod;
+    text-align: center;
+    padding: 0.35em 0 0.65em 0;
+    color: #fff;
+}
+
+.player.right .nickname {
+    color: #fff;
+    font-size: 1.2em;
+    right: 2.3em;
+    padding-top: 0.3em;
+    font-weight: 700;
+}
+
+.player.right .money {
+    color: #fff;
+    right: 1.5em;
+    padding-top: 2.15em;
+    text-align: right;
+}
+
+.player.right .equip {
+    width: 1em;
+    height: 1em;
+    bottom: 0.25em;
+    right: 6.75em;
+    fill: #fff;
+}
+
+.player.right .tabpos {
+    color: #778;
+    bottom: 0.2em;
+    right: 0.2em;
+}
+
+.player.right .primary_weapon {
+    padding-top: 0.25em;
+    filter: invert(1);
+    left: 0.25em;
+    text-align: left;
+    transform: scale(-1, 1);
+}
+
+.player.right .secondary_weapon {
+    padding-top: 2.25em;
+    filter: invert(1);
+    left: 0.25em;
+    text-align: left;
+    transform: scale(-1, 1);
+}
+
+.player.right .kevlar_slot {
+    filter: invert(1);
+    color: #fff;
+    right: 5.5em;
+    padding-top: 2.3em;
+    text-align: right;
+    transform: scale(0.8);
+}
+
+.player.right .gr_slot1 {
+    filter: invert(1);
+    color: #fff;
+    left: 3.5em;
+    padding-top: 2.4em;
+    text-align: right;
+    transform: scale(0.8);
+}
+
+.player.right .gr_slot2 {
+    filter: invert(1);
+    color: #fff;
+    left: 4.5em;
+    padding-top: 2.4em;
+    text-align: right;
+    transform: scale(0.8);
+}
+
+.player.right .gr_slot3 {
+    filter: invert(1);
+    color: #fff;
+    left: 5.5em;
+    padding-top: 2.4em;
+    text-align: right;
+    transform: scale(0.8);
+}
+
+.player.right .gr_slot4 {
+    filter: invert(1);
+    color: #fff;
+    left: 6.5em;
+    padding-top: 2.4em;
+    text-align: right;
+    transform: scale(0.8);
+}
+
+.player.right .kad_wrap {
+    background: #101040cc;
+    width: 7em;
+    height: 3.5em;
+    right: 18em;
+}
+
+.player.right .kad_span {
+    position: absolute;
+    right: 0.5em;
+    top: 0.4em;
+    color: #fff;
+    text-align: right;
+}
+
+.player.right .kad {
+    font-size: 1.5em;
+    right: 0.3em;
+    top: 1em;
+    color: #fff;
+    font-weight: 700;
+    text-align: right;
+}
+
+.player.right .kills {
+    right: 18.5em;
+    width: 3em;
+    top: 1.1em;
+    text-align: right;
+}
+
+.player.right .kills svg {
+    fill: #fff;
+}
+
+.player.right .kill_count {
+    color: #fff;
+    vertical-align: top;
+}
+
+/* SIDEBARS */
+
+/* MISC */
+
+#timeout_bar {
+    width: 13em;
+    height: 2.5em;
+    padding: 0.25em;
+    background: #101040cc;
+    right: 1em;
+    top: 0.6em;
+}
+
+#timeout_team_logo {
+    padding: 0.25em;
+    width: 2em;
+    height: 2em;
+}
+
+#timeout_team_name {
+    top: 0.3em;
+    left: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+
+#timeout_count {
+    top: 1.4em;
+    left: 3em;
+    color: #fff;
+}
+
+#match_rounds_bar {
+    width: 42.7em;
+    height: 2em;
+    background: #101040cc;
+    left: 50%;
+    top: 6.5em;
+    transform: translateX(-50%);
+    padding: 0.15em 0.65em;
+}
+
+.round_won {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 1em;
+    transform: translateY(-50%);
+}
+
+#lose_bonus_bar {
+    width: 20em;
+    height: 2em;
+    background: #101040cc;
+    left: 50%;
+    top: 6.5em;
+    transform: translateX(-50%);
+}
+
+.lose_bonus_text {
+    text-align: center;
+    color: #fff;
+    width: 7em;
+    left: 50%;
+    top: 0.4em;
+    transform: translateX(-50%);
+}
+
+.lose_bonus {
+    width: 1em;
+    height: 1em;
+    border: 2px solid #293fad;
+    border-radius: 10em;
+    top: 0.4em;
+}
+
+#lose_left_4 {left: 0.3em}
+#lose_left_3 {left: 1.8em}
+#lose_left_2 {left: 3.3em;}
+#lose_left_1 {left: 4.8em;}
+#lose_right_1 {right: 4.8em;}
+#lose_right_2 {right: 3.3em;}
+#lose_right_3 {right: 1.8em}
+#lose_right_4 {right: 0.3em}
+
+/* MISC */
