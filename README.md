@@ -1,11 +1,11 @@
 # SCES CS:GO GOTV Spectator hud
 
 ### Recently added:
-1. Total optimisation. *(v0.6)
-2. Kills per round to side players' bars. *(v0.6)
-3. Technical pause bar. *(v0.6)
-4. Defusing bar to player under spectate. *(v0.6)
-5. Tactical timeout bar. *(v0.2)
+1. Total optimisation. *(v0.6)*
+2. Kills per round to side players' bars. *(v0.6)*
+3. Technical pause bar. *(v0.6)*
+4. Defusing bar to player under spectate. *(v0.6)*
+5. Tactical timeout bar. *(v0.2)*
 
 ### Planned updates:
 1. Optimise the hud.
