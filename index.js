@@ -10,6 +10,9 @@ app.use(express.static('public'));
 let data = '';
 let connections = [];
 
+let state_winrounds = false;
+let state_losebonus = false;
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
@@ -31,15 +34,29 @@ app.post('/', (req, res) => {
     req.on('end', () => {
         res.end('');
     });
-})
+});
+
+
+
+app.get('/cp', (req, res) => {
+    res.sendFile(__dirname + '/control.html');
+});
+
+
 
 io.on('connection', (socket) => {
-  connections.push(socket);
-  console.log('\x1b[33m' + socket.id + ' \x1b[36mconnected');
+    connections.push(socket);
+        console.log('\x1b[33m' + socket.id + ' \x1b[36mconnected');
 
-  socket.on('disconnect', () => {
-    console.log('\x1b[33m' + socket.id + ' \x1b[36mdisconneted');
-  })
+    socket.on('disconnect', () => {
+        console.log('\x1b[33m' + socket.id + ' \x1b[36mdisconneted');
+    });
+
+    socket.on('call_resethud', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hud_reset')}});
+    socket.on('call_show_winrounds', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_show_winrounds'); connections[i].emit('checkState', 'winrounds', true)}});
+    socket.on('call_hide_winrounds', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hide_winrounds'); connections[i].emit('checkState', 'winrounds', false)}});
+    socket.on('call_show_losebonus', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_show_losebonus'); connections[i].emit('checkState', 'losebonus', true)}});
+    socket.on('call_hide_losebonus', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hide_losebonus'); connections[i].emit('checkState', 'losebonus', false)}});
 });
 
 server.listen(3000, () => {
