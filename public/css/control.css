@@ -1,0 +1,97 @@
+@media screen and (orientation: portrait) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 100px;
+        font-family: 'Play', sans-serif;
+        user-select: none;
+    }
+    
+    body {
+        background: #151515;
+    }
+    
+    .btn {
+        width: calc(100% - 1.5em);
+        height: 1em;
+        padding: 0.5em;
+        background: #fff;
+        text-align: center;
+        margin: 0.25em;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #ccc;
+    }
+
+    #confirmation_reset {
+        position: absolute;
+        width: calc(100% - 1.5em);
+        padding: 1em 0.5em;
+        margin: 0.25em;
+        top: 0;
+        background: #151515ee;
+    }
+
+    #confirmation_cancel {
+        color: #fff;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #confirmation_text {
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-family: 'Play', sans-serif;
+        user-select: none;
+    }
+    
+    body {
+        background: #151515;
+    }
+    
+    .btn {
+        width: calc(100% - 1.5em);
+        height: 1em;
+        padding: 1em 0.5em;
+        background: #fff;
+        text-align: center;
+        margin: 0.25em;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #ccc;
+    }
+
+    #confirmation_reset {
+        position: absolute;
+        width: calc(100% - 1.5em);
+        padding: 2.5em 0.5em;
+        margin: 0.25em;
+        top: 0;
+        background: #151515ee;
+    }
+
+    #confirmation_cancel {
+        color: #fff;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #confirmation_text {
+        color: #fff;
+        text-align: center;
+    }
+}

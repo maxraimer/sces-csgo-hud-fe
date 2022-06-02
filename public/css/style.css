@@ -1,3 +1,15 @@
+:root {
+    --bg-primary-color: #282828;
+    --bg-secondary-color: #282828cc;
+    --bg-light-color: #444444;
+    --bg-alt-primary-color: #101040;
+    --bg-alt-secondary-color: #101040cc;
+    --bg-alt-light-color: #293fad;
+    --color-one: #1e90ff;
+    --color-alt-two: #c61515;
+    --color-two: #daa520;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +27,7 @@ div {
 #left_team_logo {
     width: 3em;
     height: 3em;
-    background: dodgerblue;
+    background: var(--color-one);
     background-size: cover;
     top: 0.5em;
     right: calc(50% + 22em);
@@ -24,7 +36,7 @@ div {
 #right_team_logo {
     width: 3em;
     height: 3em;
-    background: goldenrod;
+    background: var(--color-two);
     background-size: cover;
     top: 0.5em;
     left: calc(50% + 22em);
@@ -39,7 +51,7 @@ div {
 #left_team_name {
     width: 15em;
     height: 1em;
-    background: #101040;
+    background: var(--bg-primary-color);
     top: 0.5em;
     right: calc(50% + 7em);
     font-weight: 700;
@@ -53,7 +65,7 @@ div {
 #right_team_name {
     width: 15em;
     height: 1em;
-    background: #101040;
+    background: var(--bg-primary-color);
     top: 0.5em;
     left: calc(50% + 7em);
     font-weight: 700;
@@ -74,37 +86,37 @@ div {
 #left_team_score {
     width: 2em;
     height: calc(1.4em - 6px);
-    background: #101040;
+    background: var(--bg-primary-color);
     top: 0.25em;
     right: calc(50% + 1.5em);
-    border-top: 3px solid dodgerblue;
-    border-bottom: 3px solid dodgerblue;
+    border-top: 3px solid var(--color-one);
+    border-bottom: 3px solid var(--color-one);
     font-size: 2em;
     text-align: center;
     padding-top: 0.1em;
-    color: dodgerblue;
+    color: var(--color-one);
     font-weight: 700;
 }
 
 #right_team_score {
     width: 2em;
     height: calc(1.4em - 6px);
-    background: #101040;
+    background: var(--bg-primary-color);
     top: 0.25em;
     left: calc(50% + 1.5em);
-    border-top: 3px solid goldenrod;
-    border-bottom: 3px solid goldenrod;
+    border-top: 3px solid var(--color-two);
+    border-bottom: 3px solid var(--color-two);
     font-size: 2em;
     text-align: center;
     padding-top: 0.1em;
-    color: goldenrod;
+    color: var(--color-two);
     font-weight: 700;
 }
 
 #match_status {
     width: 6em;
     height: 3em;
-    background: #101040;
+    background: var(--bg-primary-color);
     top: 0.5em;
     left: calc(50% - 3em);
 }
@@ -127,7 +139,7 @@ div {
 }
 
 #bomb_timer {
-    width: 0;
+    width: 50em;
     height: 0.25em;
     background: red;
     left: 50%;
@@ -136,9 +148,9 @@ div {
 }
 
 #defuse_timer {
-    width: 0;
+    width: 50em;
     height: 0.25em;
-    background: dodgerblue;
+    background: var(--color-one);
     left: 50%;
     top: 3.75em;
     transform: translateX(-50%);
@@ -147,7 +159,7 @@ div {
 #series {
     width: 14em;
     height: 2em;
-    background: #101040;
+    background: var(--bg-primary-color);
     top: 4em;
     left: calc(50% - 7em);
 }
@@ -157,7 +169,7 @@ div {
     width: 1em;
     text-align: center;
     height: 1em;
-    border: 2px solid #293fad;
+    border: 2px solid var(--bg-light-color);
     border-radius: 1em;
     top: 50%;
     transform: translateY(-50%);
@@ -214,7 +226,7 @@ div {
     width: 25em;
     height: 3em;
     top: 0;
-    background: #101040;
+    background: var(--bg-primary-color);
 }
 
 #spec_primary_line img {
@@ -250,7 +262,7 @@ div {
 #spec_secondary_line {
     width: 18em;
     height: 2em;
-    background: #101040cc;
+    background: var(--bg-secondary-color);
     bottom: 0;
     left: calc(50% - 9em);
 }
@@ -321,13 +333,13 @@ div {
 #defusing_timer_background {
     width: 15em;
     height: 4em;
-    background: #101040cc;
+    background: var(--bg-secondary-color);
 }
 
 #defusing_timer_line {
-    width: 0em;
+    width: 15em;
     height: 4em;
-    background: #101040;
+    background: var(--bg-primary-color);
 }
 
 #defusing_name {
@@ -346,13 +358,21 @@ div {
 
 #defusing_timer {
     font-size: 1.5em;
-    color: dodgerblue;
+    color: var(--color-one);
     width: 3em;
     left: 0.3em;
     top: 0.7em;
     text-align: center;
 }
 
+#who_is_under_spec {
+    width: 18em;
+    height: 3.5em;
+    /* box-shadow: 0 0 0.5em 0.25em #ffffff77; */
+    box-shadow: 0 0 0em 0.15em #ffffff;
+    left: 0.5em;
+    top: 29em;
+}
 
 /* SPECTATE */
 
@@ -361,18 +381,18 @@ div {
 .team_info {
     width: 18em;
     height: 3.5em;
-    background: #101040cc;
+    background: var(--bg-secondary-color);
     top: 25em;
 }
 
 #left_team_info {
     left: 0.5em;
-    color: dodgerblue;
+    color: var(--color-one);
 }
 
 #right_team_info {
     right: 0.5em;
-    color: goldenrod;
+    color: var(--color-two);
 }
 
 .team_side_logo {
@@ -439,7 +459,7 @@ div {
 .player {
     width: 18em;
     height: 3.5em;
-    background: #101040cc;
+    background: var(--bg-secondary-color);
 }
 
 #p1 {left: 0.5em; top: 29em;}
@@ -457,7 +477,7 @@ div {
     width: 2.5em;
     height: 1em;
     left: 0;
-    background: dodgerblue;
+    background: var(--color-one);
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
@@ -467,7 +487,7 @@ div {
     width: 15.5em;
     height: 1em;
     left: 2.5em;
-    background: dodgerblue;
+    background: var(--color-one);
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
@@ -556,7 +576,7 @@ div {
 }
 
 .player.left .kad_wrap {
-    background: #101040cc;
+    background: var(--bg-secondary-color);
     width: 7em;
     height: 3.5em;
     left: 18em;
@@ -596,7 +616,7 @@ div {
     width: 2.5em;
     height: 1em;
     right: 0;
-    background: goldenrod;
+    background: var(--color-two);
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
@@ -606,7 +626,7 @@ div {
     width: 15.5em;
     height: 1em;
     right: 2.5em;
-    background: goldenrod;
+    background: var(--color-two);
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
@@ -703,7 +723,7 @@ div {
 }
 
 .player.right .kad_wrap {
-    background: #101040cc;
+    background: var(--bg-secondary-color);
     width: 7em;
     height: 3.5em;
     right: 18em;
@@ -750,7 +770,7 @@ div {
     width: 13em;
     height: 2.5em;
     padding: 0.25em;
-    background: #101040cc;
+    background: var(--bg-secondary-color);
     right: 1em;
     top: 0.6em;
 }
@@ -766,35 +786,75 @@ div {
     left: 3em;
     font-weight: 700;
     color: #fff;
+    text-transform: uppercase;
 }
 
 #timeout_count {
     top: 1.4em;
     left: 3em;
     color: #fff;
+    height: 1.1em;
 }
 
 #match_rounds_bar {
-    width: 42.7em;
-    height: 2em;
-    background: #101040cc;
+    width: 45em;
+    height: 3.8em;
+    background: var(--bg-secondary-color);
     left: 50%;
     top: 6.5em;
     transform: translateX(-50%);
-    padding: 0.15em 0.65em;
+    padding: 0.15em 0.5em;
 }
 
-.round_won {
-    width: 1.2em;
-    height: 1.2em;
-    margin-top: 1em;
+#round_divider_vertical {
+    width: 0.01em;
+    height: 3em;
+    background: #aaa;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.8em;
+}
+
+#round_divider_horizontal {
+    width: inherit;
+    height: 0.01em;
+    background: #aaa;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2.2em;
+}
+
+.round_number {
+    font-size: 0.5em;
+    width: 2.6em;
+    position: relative !important;
+    display: inline-block;
+    text-align: center;
+    margin-right: -0.048em;
+    top: -1em;
+    color: #fff;
+}
+
+#rounds_top .round_won {
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: 1.2em;
     transform: translateY(-50%);
+    vertical-align: middle;
+}
+
+#rounds_bottom .round_won {
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: 3em;
+    transform: translateY(-50%);
+    vertical-align: middle;
 }
 
 #lose_bonus_bar {
     width: 20em;
     height: 2em;
-    background: #101040cc;
+    background: var(--bg-secondary-color);
     left: 50%;
     top: 6.5em;
     transform: translateX(-50%);
@@ -812,7 +872,7 @@ div {
 .lose_bonus {
     width: 1em;
     height: 1em;
-    border: 2px solid #293fad;
+    border: 2px solid var(--bg-light-color);
     border-radius: 10em;
     top: 0.4em;
 }
@@ -826,4 +886,35 @@ div {
 #lose_right_3 {right: 1.8em}
 #lose_right_4 {right: 0.3em}
 
+#round_winner_bar {
+    width: 14em;
+    height: 5em;
+    background: var(--bg-primary-color);
+    transform: skewX(-20deg) translateX(-50%);
+    left: 50%;
+    top: 10em;
+}
+
+#round_winner_logo {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+    left: 1em;
+    position: absolute;
+    transform: skewX(20deg);
+}
+
+#round_winner_bar .round_winner_text {
+    left: 7em;
+    width: 5em;
+    height: 2.5em;
+    top: 1.25em;
+    color: #fff;
+    transform: skewX(20deg) scale(1.2);
+}
+
 /* MISC */
+
+body {
+    background: #111;
+}
