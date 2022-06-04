@@ -72,12 +72,16 @@ const sidebars = {
     left_team_info: {
         team_side_logo: $('#left_team_info .team_side_logo'),
         team_money_value: $('#left_team_info .team_money_value'),
+        team_money_text: $('#left_team_info .team_money_text'),
         team_equip_value: $('#left_team_info .team_equip_value'),
+        team_equip_text: $('#left_team_info .team_equip_text'),
     },
     right_team_info: {
         team_side_logo: $('#right_team_info .team_side_logo'),
         team_money_value: $('#right_team_info .team_money_value'),
+        team_money_text: $('#right_team_info .team_money_text'),
         team_equip_value: $('#right_team_info .team_equip_value'),
+        team_equip_text: $('#right_team_info .team_equip_text'),
     },
     player1: {
         nickname: $('#p1 .nickname'),
@@ -230,7 +234,7 @@ const sidebars = {
         primary_weapon: $('#p0 .primary_weapon'),
         secondary_weapon: $('#p0 .secondary_weapon'),
         money: $('#p0 .money'),
-        gr_slot0: $('#p0 .gr_slot1'),
+        gr_slot1: $('#p0 .gr_slot1'),
         gr_slot2: $('#p0 .gr_slot2'),
         gr_slot3: $('#p0 .gr_slot3'),
         gr_slot4: $('#p0 .gr_slot4'),
@@ -303,7 +307,7 @@ const svg_weapons_secondary = {
     weapon_hkp2000: `<svg style="width: 2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.02 32"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_hkp2000" d="M42,2.06c0-.2.16-.84,0-1s-.57.11-.47-.42c.16-.78-1.2-.64-1.63-.61-1.14.08-2.28,0-3.43,0L27.22,0c0,.33.16,1.15,0,1.43s-1,.07-1.16.07H22.35c-.5,0-1.05.24-1.05-.37,0-.2.08-.58-.22-.57-.15,0-.61.14-.58-.15,0-.52-.22-.36-.7-.36L4.48,0V.88L3.17.83c0,.66-.71,1-1,1.59S1.54,3.5,1.24,4A3.16,3.16,0,0,0,.88,5.64c.06.55,0,.54-.41.81-.25.16-.17,1-.23,1.33A3.91,3.91,0,0,0,.2,9c.06.33.2.21.42.34s.08.2.18.27c.37.23.91.27,1.3.46a7.47,7.47,0,0,1,2.52,2.05c.33.43,0,.68,0,1.17s-.33.67-.33.94a4.24,4.24,0,0,1-.53,1.29c-.09.17-.46.71-.44.86a4.74,4.74,0,0,1-.5,1.17,5.29,5.29,0,0,0-.5,1.17,16.06,16.06,0,0,1-1,2.07,8.16,8.16,0,0,0-.35,1c-.14.39-.15.79-.28,1.18a9.65,9.65,0,0,0-.48,2.77C.22,26,0,26,0,26.29s0,.45,0,.68c0,.59,0,1.18,0,1.77,0,1.3,2.09.28,2.78.66.27.15,0,.63.43.79a6.1,6.1,0,0,1,1.06.27,7.28,7.28,0,0,0,2.4.63,26,26,0,0,1,4,.58A4.65,4.65,0,0,0,12,32c.53,0,1-.09,1.56-.09.33,0,.94.28.94-.27,0-.2-.86-.41-1-.59A3.79,3.79,0,0,1,13.06,28a7.6,7.6,0,0,0,.36-1.6c.09-.45.36-.82.46-1.27.18-.79.51-1.42.75-2.21a13.93,13.93,0,0,0,.63-2,9,9,0,0,0,.32-1.74,8.09,8.09,0,0,1,.23-1.53c.07-.35.23-.43.57-.43,3,0,5.92,0,8.87,0,1.27,0,2.53,0,3.79,0,.14,0,.8.08.8-.17,0-.42.28-1-.14-1.24-.23-.13-.05-1.87-.05-2.17,0-.45,0-.91,0-1.37a1.93,1.93,0,0,1,.85-1.69c.32-.3,1.5-.1,1.94-.1h6.53c.46,0,2.92.34,3-.25a29.23,29.23,0,0,0,0-4.08C41.94,4.8,41.84,3.41,42,2.06Zm-34.19,29a.76.76,0,0,1,.33.1A1.26,1.26,0,0,1,7.76,31.06Zm21.06-15.5c-.07.44-.43.25-.81.22,0,.73-.12.61-.85.61H24.34c-1.68,0-3.36-.06-5,.05-.82.06-.57-.58-.62-1.18s-.42-1-.47-1.63.46-1,.46-1.57.65-.76.85-1.15a1.76,1.76,0,0,1,1.21-.47c.55.19.19,1.84.15,2.25-.08.79.53,1.08.92,1.65a3.41,3.41,0,0,0,1.48,1.14,3.1,3.1,0,0,0,1.57.17c.31,0,.45-.67.23-.79s-.64.07-.64-.06-.45-.2-.48-.22a3.8,3.8,0,0,1-1.34-1,3.64,3.64,0,0,1-.33-2.31c0-.3.2-.76.51-.82a22.09,22.09,0,0,1,3.45,0A2.1,2.1,0,0,1,28.1,11c.19.21.76.42.76.61,0,.91,0,1.83,0,2.74A7.16,7.16,0,0,1,28.82,15.56Z"/></g></g></svg>`,
     weapon_revolver: `<svg style="width: 3em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.2 32"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_revolver" d="M64,1.5c0,1.13,1.1,1.7,1.19,2.86,0,.51,0,1,0,1.49a3.63,3.63,0,0,1-.34,1.82,9.08,9.08,0,0,0,0,1.46c0,.21-.14,1.27-.45,1.27H36.87c-.84,0-.73,0-1.11.82A8.74,8.74,0,0,0,35,13.86a6.33,6.33,0,0,1-.19,1.86c-.41.62-2.18.16-3,.42s-3.32.63-3.32,1.38c0,1.44,0,3.16-1.18,4.16a6.06,6.06,0,0,1-3.77.92c-1,0-2.31.2-3.17-.51a5.54,5.54,0,0,1-2-2.66c-.06-.16-.41-1.7-.75-1.15-.15.25.22,1.47.27,1.74.13.73-.19.67-.74.45a2.83,2.83,0,0,0-1.53-.3,11.47,11.47,0,0,1-1.83.31c-.46,0-.11,1-.16,1.39l-.27,1.83c-.06.42-.65,1-.9,1.35-.45.66-.62.79-.51,1.57a13.94,13.94,0,0,1,.12,1.94c0,.67-.37.65-.85,1.09a2.38,2.38,0,0,0-.88,1.47c-.1,1.09-2.1.87-3,.84-1.29-.05-2.57-.11-3.85-.2-1.13-.08-2.23.15-2.94-.86C-.28,29.69,0,28.37.19,27A26.61,26.61,0,0,1,3.6,17.54c.51-.94,1.05-1.88,1.54-2.83a24.07,24.07,0,0,0,1.8-3.45,15.26,15.26,0,0,1,.39-1.62c.2-.43.45-.29.8-.48s.46-.58.74-.77a5.71,5.71,0,0,1,2-.49c.72-.14.72-.29,1.23-.78a2.79,2.79,0,0,1,1.29-.91L14.35,6c.26-.06.66.1.9,0,1.13-.54,0-1.78-.81-1.83-.54,0-1.34.56-1.73,0a3.15,3.15,0,0,1,1.73-.42,11.15,11.15,0,0,0,2,.32c.59,0,.32,0,.65-.38s.43-.43.66-.63c.64-.54,1.2-.4,2-.4-.33-.19-1.29-.53-1.46-.86A5.26,5.26,0,0,1,18.38,0c.1-.1.76,0,.91,0,.33,0,0,.33.24.33.43,0,.41,0,.41.38s.2.21.51.21a5.89,5.89,0,0,1,1.92,0c.15.07.29.49.45.49h.88c1,0,2,.1,2.9.1h8.79c.55,0,.72.22,1.2.22H59.85a7,7,0,0,0,2-.66A3.64,3.64,0,0,1,63,.8c.35,0,.44-.09.51.25s0,.56.43.45M42.65,3.07c.23-.79-1.37-.44-1.83-.44H39c-.15,0-.93-.1-1,0-.6.6,1.7.44,1.83.44h2.91M52.58,3c.23-.7-1.73-.38-2.14-.38H47.67c0,.71,1.65.38,2.09.38h2.82m4.86.06h4.39c.11,0,.86.06.52-.33-.08-.08-.71,0-.81,0h-2c-.39,0-2.32-.29-2.14.33M25.07,16.77a4.28,4.28,0,0,1-1.27.62c-.67.18-1,0-1.12.75a2.73,2.73,0,0,0,.52,2.14c.1.17.44.41.27.55-.33.28-.34.11-.66-.16a4.74,4.74,0,0,1-1.45-2.76,4.66,4.66,0,0,0-1.31-.38c-.59.14-1.15.29-1.73.48.24.62.47,1.25.73,1.86a3.35,3.35,0,0,0,1.51,1.73c1.15.82,3.41.77,4.76.45a3.2,3.2,0,0,0,2.29-1.67,5.26,5.26,0,0,0,.3-2.06c.1-1,.08-1-.86-1.3-.53-.2-1.68-1-2-.25"/></g></g></svg>`,
     weapon_tec9: `<svg style="width: 2.7em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.67 32"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_tec9" d="M26,.83c.88-.46,1.51-1.2,2.39-.61a6.09,6.09,0,0,1,.89.61c.25.24.24.26.24.66a4.5,4.5,0,0,0,0,.75h20c.25,0,.06,0,.18-.14s0-.22,0-.28.09-.07.18-.19.52-.66.69-.66c.47,0,1-.1,1.33.14a1.42,1.42,0,0,1,.33.42c0,.11.28.16.28.38s0,.26,0,.3.33.28.33.24c0,.4.39.23.52.45s-.14.73,0,.82a1.15,1.15,0,0,1,.18.54,1.31,1.31,0,0,0,0,.28c-.06-.19.45.23.26.23a6.66,6.66,0,0,1,1.48,0c-.08,0,.28.27.28.19a1.82,1.82,0,0,0,0,.33,7.75,7.75,0,0,1,0,1.18V7c0,.41-.25.28-.65.27s-1.11-.16-1.37,0a2.57,2.57,0,0,0-.14.66,1.1,1.1,0,0,1-.33.58c-.12,0-.14.36-.26.47s-.3.38-.3.38c0,.45-.5.22-.75.21-2-.09-4,0-5.93,0l-7.34-.05c-.19,0-.26,0-.41,0-.56,0-.64-.1-.64.43v2.34c0,.47-1.71.33-2.14.33-.66,0-1,1.07-1.41,1.53-.23.24-.68.56-.68,1V18c0,.09.45,0,.54.19a2.83,2.83,0,0,1,0,1.5c-.09.52-.1.71-.56.94a1,1,0,0,0-.56.8,14.18,14.18,0,0,0,0,2.35v7.33c0,.16.09.74,0,.84s-.77,0-.89,0h-6c-.43,0-.51.08-.65-.19a5.9,5.9,0,0,1,0-1.78V21c-.28.2-.28.66-.73.66-.21,0-1.67,0-1.67-.33s-.09-1.18-.09-1.74c0-.1,0-1,0-1H17.41c-.48,0-.27.63-.27,1L14,19.61c-.24,0-.45,1.21-.55,1.24a1.3,1.3,0,0,0-.31.54c0,.31-.15.38-.28.66s-.32.8-.47,1.18a6.17,6.17,0,0,1-.19.61c-.09.19-.25.49-.33.65a6.23,6.23,0,0,0-.37,1.13c0,.12-.24.37-.28.52s-.17.5-.24.75c-.12.46,0,.28.14.61a2.33,2.33,0,0,1,.24.65c0,.49.09,1.29-.38,1.51-.29.13-.92-.14-1.06-.14-.43,0-1-.08-1.33-.1-1.06-.06-2.07-.14-3.13-.17-.87,0-1.64-.2-2.62-.2-.3,0-.57-.13-.85-.15S.8,29,.8,28.56c0,0-.6-.21-.7-.4a1.38,1.38,0,0,1-.1-.71,10.49,10.49,0,0,1,.42-2.39c.08-.37.26-.73.38-1.13,0-.11.07-.21.09-.28s.13-.15.19-.28,0-.47.14-.61a8.13,8.13,0,0,0,1.36-2.35c.39-.87,1.06-1.6,1.41-2.3a3.18,3.18,0,0,1,.38-.52A3.68,3.68,0,0,0,4.74,17c0-.46.61-.74.61-1.24,0,0,.2-.57.24-.68.12-.31.35-.37.28-.75a2.45,2.45,0,0,0-.38-.66A4.1,4.1,0,0,0,5.05,13a1,1,0,0,1-.31-.85c0-.42-.89-.21-1.24-.21a6.11,6.11,0,0,1-1.17-.12c-.31-.06-.44-.44-.68-.56a3.63,3.63,0,0,1-.47-.49c-.12-.13-.38-.39-.38-.61S.71,9.19.71,8.76V6.42C.71,5.92.8,5.32.8,5s0-.52.17-.58.22-.16.35-.26A2.44,2.44,0,0,1,1.6,4s0-.19.09-.24.38-.24.44-.26.19-.17.31-.26a9.71,9.71,0,0,1,.94-.56c.35-.18,1.33-.61,1.22-1.08.12,0,.27,0,.38,0-.07-.56.27-.8.77-.78.27,0,.87,0,.87.28a3.15,3.15,0,0,0,.14.73c.16.2.85.1,1.17.1h3.31L25.86,2h.06A3.45,3.45,0,0,1,26,.83M23.24,14.54c-.18-.38-.23-1-.65-1.22a4.15,4.15,0,0,0-1.32-.05H19.39a3.25,3.25,0,0,0,1.13,1.55c.16.15.81.39.85.61.07.44-.48.72-.87.59a3.51,3.51,0,0,1-1.76-1c-.14-.14-.66-.5-.66-.66a5.23,5.23,0,0,0-.4-.89c0-.07,0-.12,0-.19-.68.13-.53,1-.9,1.41a2.35,2.35,0,0,0-.37.92c0,.28-.38.62-.38.89s6.18.15,6.91.16a.46.46,0,0,1,.18-.51c0-.05.33-.56.33-.52,0-.25.06-.3,0-.52s-.2-.36-.19-.56"/></g></g></svg>`,
-    weapon_usp_silencer: `<svg style="width: 4em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.58 32"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_usp_silencer" d="M86.46,1.74,86.13.56,85.85.22H68.61l-.39.17-.4,0H54.41L53.9.11l-.39.23H47.67V2H46v.79H44.86v-.9l-.39-.5-.39,0v-1L43.74,0H40.93V1.52H29.14v.16H22.29V1.46H10.06l-.34-.28L6.13,1.12l-.9-.5v1L4.05,3.82,3.32,7.47,1.63,6.4,1.35,7.86.74,7.8A.65.65,0,0,0,0,8.37a.72.72,0,0,0,.33.72l.4.12,2.07.22-.11.84-.05,1.3.44.44,1.46.51A4.23,4.23,0,0,1,6,13.25a1,1,0,0,1,.28,1.07l-.39,1L5.11,17a34.5,34.5,0,0,0-2,5.78A47.73,47.73,0,0,0,2,29.14l-.11,2.75L14,32l-.62-.9.11-1.35,2.86-12.12.4.11,1-.11.84-.17.84.11,1.46.45.84.34,5.84-.23.9-.17.56-.61,2.25-5.5a1.47,1.47,0,0,1,.45-.62l.22-.11H44.7l.11-1.91L45.09,9V8l-.28-.23v-2H46v.84h1.9v1h5.68l.5.17.34-.23H67.82l.34-.11.22.17H85.85l.22-.5L86.41,6l.17-2.19ZM29.82,12.52,29,14.88l-1.13,2.53-2.47.16-2.75-.11-1.23-.11-1.63-.06-1.46-.62-.95-1.12A2.22,2.22,0,0,1,17.24,14,3.06,3.06,0,0,1,18,12.52a3.77,3.77,0,0,1,1.46-.79l.89-.22-.61.73a4,4,0,0,0-.84,2.08A3.54,3.54,0,0,0,19.32,16l.45,1,.39-.29-.22-.56L19.82,15a3,3,0,0,1,.45-1.4l.68-.9,1.34-1.41,6.41,0,.39.06.62.33.11.56Z"/></g></g></svg>`,
+    weapon_usp_silencer: `<svg style="width: 4em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.58 32"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_usp_silencer" d="M86.46,1.74,86.13.56,85.85.22H68.61l-.39.17-.4,0H54.41L53.9.11l-.39.23H47.67V2H46v.79H44.86v-.9l-.39-.5-.39,0v-1L43.74,0H40.93V1.52H29.14v.16H22.29V1.46H10.06l-.34-.28L6.13,1.12l-.9-.5v1L4.05,3.82,3.32,7.47,1.63,6.4,1.35,7.86.74,7.8A.65.65,0,0,0,0,8.37a.72.72,0,0,0,.33.72l.4.12,2.07.22-.11.84-.05,1.3.44.44,1.46.51A4.23,4.23,0,0,1,6,13.25a1,1,0,0,1,.28,1.07l-.39,1L5.11,17a34.5,34.5,0,0,0-2,5.78A47.73,47.73,0,0,0,2,29.14l-.11,2.75L14,32l-.62-.9.11-1.35,2.86-12.12.4.11,1-.11.84-.17.84.11,1.46.45.84.34,5.84-.23.9-.17.56-.61,2.25-5.5a1.47,1.47,0,0,1,.45-.62l.22-.11H44.7l.11-1.91L45.09,9V8l-.28-.23v-2H46v.84h1.9v1h5.68l.5.17.34-.23H67.82l.34-.11.22.17H85.85l.22-.5L86.41,6l.17-2.19ZM29.82,12.52,29,14.88l-1.13,2.53-2.47.16-2.75-.11-1.23-.11-1.63-.06-1.46-.62-.95-1.12A2.22,2.22,0,0,1,17.24,14,3.06,3.06,0,0,1,18,12.52a3.77,3.77,0,0,1,1.46-.79l.89-.22-.61.73a4,4,0,0,0-.84,2.08A3.54,3.54,0,0,0,19.32,16l.45,1,.39-.29-.22-.56L19.82,15a3,3,0,0,1,.45-1.4l.68-.9,1.34-1.41,6.41,0,.39.06.62.33.11.56Z"/></g></g></svg>`,
 };
 
 // const weapons_knives_names = ['bayonet', 'm9_bayonet', 'butterfly', 'falchion', 'flip', 'gut', 'tactical', 'karambit', 'survival_bowie', 'knife_push', 'knife_t', 'knife_ct', 'knifegg', 'knife_ursus', 'knife_gypsy_jackknife', 'knife_stiletto', 'knife_widowmaker','knife_canis', 'knife_cord', 'knife_skeleton', 'knife_outdoor'];
@@ -317,12 +321,12 @@ const svg_weapon_taser = {
 }
 
 const svg_weapons_grenades = {
-    weapon_flashbang: `<svg style="width: 0.5em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.73 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_flashbang" d="M2.56,3.66V1.9c-.71-.09-1.06-.43-1.06-1A.73.73,0,0,1,1.9.13L2.78,0H7.63l4.1,6.57V20.46l-2.07,1L9,21.34a.56.56,0,0,1,.17-.75,6.91,6.91,0,0,1,1.06-.7l.62-.31V7.19l-1.77-1V8.25L8,9.22v2.07H7.58v2.12H8v2.2H7.58v2.12H8v2.2H7.58v2.12H8v2l1.06,1.8v1.5a.54.54,0,0,1-.61.62H.62A.55.55,0,0,1,0,27.38v-1.5l1-1.8v-2H1.5V19.93H1v-2.2H1.5V15.61H1v-2.2H1.5V11.29H1V9.22l-1-1V5.42a.54.54,0,0,1,.62-.61h.61L2.56,3.66Z"/></g></g></svg>`,
-    weapon_decoy: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.34 31.97"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_decoy" d="M4.7,15.46l1.8,1-.74,1.28L4,16.73v2H2.55V16.68L.7,17.74,0,16.46l1.8-1L0,14.4l.75-1.27,1.8,1V12.07H4v2.07l1.76-1,.7,1.27ZM7.76,4,9.91,2.7,9.05,1.21,7,2.42V0H5.22V2.5L3,1.21,2.17,2.7,4.36,4,2.17,5.2,3,6.69,5.22,5.44v2.5H7V5.51L9.05,6.69,9.91,5.2ZM25.53,5.61l1.76-1.05-.7-1.28-1.76,1V2.23H23.38V4.34l-1.8-1.06-.75,1.28,1.76,1.05-1.76,1,.71,1.28,1.84-1.06V8.91h1.45v-2l1.76,1,.75-1.28Zm-13.38,2L10.82,8.78H10.2a.54.54,0,0,0-.61.61v2.82l1,1v2.08h.49v2.11H10.6v2.21h.49V21.7H10.6v2.2h.49V26H10.6v2l-1,1.81v1.5a.54.54,0,0,0,.61.62h7.85a.55.55,0,0,0,.62-.62v-1.5L17.61,28V26h-.44V23.9h.44V21.7h-.44V19.58h.44V17.37h-.44V15.26h.44V13.18l1.06-1V10.14l1.77,1V23.54l-.62.31a6.84,6.84,0,0,0-1.06.71.58.58,0,0,0-.18.75l.67.13,2.07-1V10.54L17.22,4H12.37l-.89.13a.74.74,0,0,0-.39.75c0,.59.35.93,1.06,1V7.63"/></g></g></svg>`,
-    weapon_incgrenade: `<svg style="width: 0.6em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.78 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_incgrenade" d="M9.51.78c.19.53.41,1.06.62,1.61a2.39,2.39,0,0,0,.39.76c.19.18.1.72.29.9.38.38.24,1.19.62,1.57.17.17.22.6.34.84,0,.07.29.3.29.43a1.39,1.39,0,0,0,.13.72,4,4,0,0,1,.49,1,11.3,11.3,0,0,1,.08,2.2V23.59c0,.57.06,1-.33,1.26-.1.07-.1.08-.32.08s-.29,0-.29-.33.24-.42.24-.63V11.09a7.64,7.64,0,0,0,0-2.24,5.12,5.12,0,0,0-.49-.66,6.58,6.58,0,0,0-.49-.82,4.23,4.23,0,0,0-.62-.79V26.52c0,.21-.07.11-.25.24a5.74,5.74,0,0,1-2.2.85,10.58,10.58,0,0,1-6.37-.2c-.33-.13-1.55-.51-1.55-.92V10.06c0-1.17,0-2.35,0-3.52C-.44,5.47,1.51,5.56,2,5.47c.25,0,1.08-.06,1.08-.31,0-.43.24-.66.24-1V2.57a4.17,4.17,0,0,0-1-.06C2.14,2.51,2.5.94,3,.78a3.45,3.45,0,0,1,.85,0h2C6.08.78,8.1.58,8,1c.18-.35.48-.92.78-1,0,0,.37,0,.42,0s-.06.36,0,.45.31,0,.28.29M4.12,9.09a7.86,7.86,0,0,0-2.38,6c.06,2,.77,4.5,3.21,4.64a3.14,3.14,0,0,1,0-5,2.39,2.39,0,0,0,.78,2.42c.31.33,1.87,2,1.16,2.43C7.94,20,8.92,18,9.06,17.2a5,5,0,0,0-.87-3.61C7,11.85,4.77,9.31,6.47,7.2L4.12,9.09m5.93,12v-.12l-2.41.26a11.45,11.45,0,0,1-2.25.23L.55,20.94v1c0,.3-.1.48.23.52l4.6.58a5.52,5.52,0,0,0,1.28-.14l2.73-.34c.65-.08.66,0,.66-.66v-.87"/></g></g></svg>`,
-    weapon_hegrenade: `<svg style="width: 0.9em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.99 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_hegrenade" d="M16.4,5.62a8.91,8.91,0,0,0,1.24,2.44c.52,1,.95,2.12,1.4,3.18a16.56,16.56,0,0,0,1.21,2.42A3.79,3.79,0,0,1,20.82,16c-.14,2.42.13,4.84.13,7.26a32.7,32.7,0,0,1,0,3.43.71.71,0,0,1-.54.7c-.22.05-.7.09-.78-.2s.41-.44.49-.75a4.75,4.75,0,0,0,0-1.25c0-1.31,0-2.62,0-3.93a25.78,25.78,0,0,0-.73-6.68,2.57,2.57,0,0,0-.5-1.1c-.21-.2-.15-.59-.37-.79a9.1,9.1,0,0,1-1.41-2.12,9.33,9.33,0,0,0-.73-.93c-.17-.21-.17-.57-.4-.71a4,4,0,0,0-1.66-.15c-.42,0-1.27-.16-1.62.15-.18.16-.06.89-.06,1.12s-.18,1.11.24,1.29a3.56,3.56,0,0,0,1,.14,10.18,10.18,0,0,1,1.63.31,4.49,4.49,0,0,1,2.31,1.34A6.5,6.5,0,0,1,19.13,16a7.62,7.62,0,0,1,.48,3.63A10.91,10.91,0,0,1,17.28,25c-1.5,1.85-4.07,2.26-6.24,2.75a6.75,6.75,0,0,1-3.34.08c-.93-.28-1.88-.57-2.81-.88a7.45,7.45,0,0,1-1.57-1,5.49,5.49,0,0,1-.83-.77,4,4,0,0,1-.92-.91A11.13,11.13,0,0,1,0,18.14,8.07,8.07,0,0,1,1.53,13.4,3.77,3.77,0,0,1,3.27,12c.85-.33,1.72-.52,2.57-.81.51-.18,1.51.24,1.64-.44.07-.37.19-1.89-.31-1.89S7,3.85,7,3.33a3.62,3.62,0,0,1-1.64-.12A.43.43,0,0,1,5,2.72a1.15,1.15,0,0,1,.21-.43,1.93,1.93,0,0,0,.2-.41.86.86,0,0,1,.85-.47c.46,0,.62-.33,1.07-.33h4a7.07,7.07,0,0,0,1.55,0,7.54,7.54,0,0,0,0-.82c0-.29.58-.22.76-.2.41,0,.58.3.58.74,0,.16-.22.29-.06.44a3.54,3.54,0,0,1,.42.35c.28.28.3.85.52,1.21.55.84.62,2.13,1.33,2.86Z"/></g></g></svg>`,
-    weapon_molotov: `<svg style="width: 0.8em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.37 30"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_molotov" d="M19.59,7.28c-.08.19,0,.42.21.7s.13.64-.17,1.1l-1.31,1.56a2.17,2.17,0,0,1-1.3.67l.37-.61.19,0L19,8.73,18.73,8l-1-.94a4.12,4.12,0,0,0-1.06-.57l-.86-.08L14.48,8.26l-.36.56h.15l-.91,1.1-.52-1a3.2,3.2,0,0,1-.12-1.8l.49-.9a2.17,2.17,0,0,0,0-1.56l.45.17a1.74,1.74,0,0,1,.78.9l.12,1.1,0,.45.61-1.35a2.35,2.35,0,0,0-.53-1.27l-.9-1.14a3.57,3.57,0,0,1-.2-1.72A2.77,2.77,0,0,1,14,0a2.4,2.4,0,0,0,.73,1.51,4.8,4.8,0,0,0,1.76.74.91.91,0,0,1,.7.7l.32.85.46.62c.19.24.34.31.44.2s0-.42-.32-.94a1.49,1.49,0,0,1,.16-1.8,3.15,3.15,0,0,0,1,1.23,3.66,3.66,0,0,1,1.11,1.68l0,.81-.33,1Zm-2.21,3.07,1.23-1.68-.21-.53-.85-.78a4.86,4.86,0,0,0-1-.53l-.57,0L14.76,8.47h0v.24l-3.23,3.93-.73.49-1.23.58a6.11,6.11,0,0,0-2.46,1.75L0,25.49c-.1.27.05.73.46,1.39a6.83,6.83,0,0,0,1.84,1.88A7.14,7.14,0,0,0,4.7,29.91a2.36,2.36,0,0,0,1.47,0l7.12-10a6.74,6.74,0,0,0,.86-2.9,8.6,8.6,0,0,1,.37-2.25l2.66-4.34Z"/></g></g></svg>`,
-    weapon_smokegrenade: `<svg style="width: 0.6em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.78 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_smokegrenade" d="M12.76,15.08V10.8a10.57,10.57,0,0,0-.08-2.2,3.66,3.66,0,0,0-.49-1,1.39,1.39,0,0,1-.13-.72c0-.13-.25-.36-.28-.43-.13-.24-.18-.67-.35-.84-.38-.38-.24-1.19-.62-1.57-.19-.18-.1-.72-.29-.9a2.39,2.39,0,0,1-.39-.76C9.92,1.84,9.7,1.31,9.51.78c0-.29-.2-.11-.28-.29S9.3.12,9.23,0s-.37,0-.42,0C8.51.11,8.2.68,8,1,8.1.58,6.08.78,5.8.78h-2A3.45,3.45,0,0,0,3,.78c-.47.16-.83,1.73-.65,1.73a4.67,4.67,0,0,1,1,.06V4.11c0,.39-.24.62-.24,1,0,.25-.83.26-1.08.31-.51.09-2.46,0-1.93,1.07,0,1.17,0,2.35,0,3.52V26.49c0,.41,1.22.79,1.55.92a10.58,10.58,0,0,0,6.37.2,5.68,5.68,0,0,0,2.2-.85c.18-.13.25,0,.25-.24V6.58a4.23,4.23,0,0,1,.62.79,6.58,6.58,0,0,1,.49.82,5.12,5.12,0,0,1,.49.66,7.64,7.64,0,0,1,0,2.24V24c0,.22-.24.28-.24.64s-.05.33.29.33.22,0,.32-.08c.39-.27.33-.69.33-1.26Zm-2.71,6v.87c0,.66,0,.58-.65.66l-2.73.34a5.66,5.66,0,0,1-1.29.14L.77,22.49c-.33,0-.22-.22-.22-.52v-1l4.84.49a12.27,12.27,0,0,0,2.25-.23l2.41-.26Zm0-11.92V10c0,.65,0,.57-.65.65L6.67,11a5.14,5.14,0,0,1-1.29.13L.77,10.57c-.33,0-.22-.22-.22-.52V9l4.84.49a11.47,11.47,0,0,0,2.25-.24L10.05,9Z"/></g></g></svg>`
+    weapon_flashbang: `<svg style="width: 0.48em; padding: 0 0.26em; margin-top: 2.2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.73 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_flashbang" d="M2.56,3.66V1.9c-.71-.09-1.06-.43-1.06-1A.73.73,0,0,1,1.9.13L2.78,0H7.63l4.1,6.57V20.46l-2.07,1L9,21.34a.56.56,0,0,1,.17-.75,6.91,6.91,0,0,1,1.06-.7l.62-.31V7.19l-1.77-1V8.25L8,9.22v2.07H7.58v2.12H8v2.2H7.58v2.12H8v2.2H7.58v2.12H8v2l1.06,1.8v1.5a.54.54,0,0,1-.61.62H.62A.55.55,0,0,1,0,27.38v-1.5l1-1.8v-2H1.5V19.93H1v-2.2H1.5V15.61H1v-2.2H1.5V11.29H1V9.22l-1-1V5.42a.54.54,0,0,1,.62-.61h.61L2.56,3.66Z"/></g></g></svg>`,
+    weapon_decoy: `<svg style="width: 1em; margin-top: 2.2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.34 31.97"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_decoy" d="M4.7,15.46l1.8,1-.74,1.28L4,16.73v2H2.55V16.68L.7,17.74,0,16.46l1.8-1L0,14.4l.75-1.27,1.8,1V12.07H4v2.07l1.76-1,.7,1.27ZM7.76,4,9.91,2.7,9.05,1.21,7,2.42V0H5.22V2.5L3,1.21,2.17,2.7,4.36,4,2.17,5.2,3,6.69,5.22,5.44v2.5H7V5.51L9.05,6.69,9.91,5.2ZM25.53,5.61l1.76-1.05-.7-1.28-1.76,1V2.23H23.38V4.34l-1.8-1.06-.75,1.28,1.76,1.05-1.76,1,.71,1.28,1.84-1.06V8.91h1.45v-2l1.76,1,.75-1.28Zm-13.38,2L10.82,8.78H10.2a.54.54,0,0,0-.61.61v2.82l1,1v2.08h.49v2.11H10.6v2.21h.49V21.7H10.6v2.2h.49V26H10.6v2l-1,1.81v1.5a.54.54,0,0,0,.61.62h7.85a.55.55,0,0,0,.62-.62v-1.5L17.61,28V26h-.44V23.9h.44V21.7h-.44V19.58h.44V17.37h-.44V15.26h.44V13.18l1.06-1V10.14l1.77,1V23.54l-.62.31a6.84,6.84,0,0,0-1.06.71.58.58,0,0,0-.18.75l.67.13,2.07-1V10.54L17.22,4H12.37l-.89.13a.74.74,0,0,0-.39.75c0,.59.35.93,1.06,1V7.63"/></g></g></svg>`,
+    weapon_incgrenade: `<svg style="width: 0.52em; padding: 0 0.24em; margin-top: 2.2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.78 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_incgrenade" d="M9.51.78c.19.53.41,1.06.62,1.61a2.39,2.39,0,0,0,.39.76c.19.18.1.72.29.9.38.38.24,1.19.62,1.57.17.17.22.6.34.84,0,.07.29.3.29.43a1.39,1.39,0,0,0,.13.72,4,4,0,0,1,.49,1,11.3,11.3,0,0,1,.08,2.2V23.59c0,.57.06,1-.33,1.26-.1.07-.1.08-.32.08s-.29,0-.29-.33.24-.42.24-.63V11.09a7.64,7.64,0,0,0,0-2.24,5.12,5.12,0,0,0-.49-.66,6.58,6.58,0,0,0-.49-.82,4.23,4.23,0,0,0-.62-.79V26.52c0,.21-.07.11-.25.24a5.74,5.74,0,0,1-2.2.85,10.58,10.58,0,0,1-6.37-.2c-.33-.13-1.55-.51-1.55-.92V10.06c0-1.17,0-2.35,0-3.52C-.44,5.47,1.51,5.56,2,5.47c.25,0,1.08-.06,1.08-.31,0-.43.24-.66.24-1V2.57a4.17,4.17,0,0,0-1-.06C2.14,2.51,2.5.94,3,.78a3.45,3.45,0,0,1,.85,0h2C6.08.78,8.1.58,8,1c.18-.35.48-.92.78-1,0,0,.37,0,.42,0s-.06.36,0,.45.31,0,.28.29M4.12,9.09a7.86,7.86,0,0,0-2.38,6c.06,2,.77,4.5,3.21,4.64a3.14,3.14,0,0,1,0-5,2.39,2.39,0,0,0,.78,2.42c.31.33,1.87,2,1.16,2.43C7.94,20,8.92,18,9.06,17.2a5,5,0,0,0-.87-3.61C7,11.85,4.77,9.31,6.47,7.2L4.12,9.09m5.93,12v-.12l-2.41.26a11.45,11.45,0,0,1-2.25.23L.55,20.94v1c0,.3-.1.48.23.52l4.6.58a5.52,5.52,0,0,0,1.28-.14l2.73-.34c.65-.08.66,0,.66-.66v-.87"/></g></g></svg>`,
+    weapon_hegrenade: `<svg style="width: 0.8em; padding: 0 0.1em; margin-top: 2.3em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.99 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_hegrenade" d="M16.4,5.62a8.91,8.91,0,0,0,1.24,2.44c.52,1,.95,2.12,1.4,3.18a16.56,16.56,0,0,0,1.21,2.42A3.79,3.79,0,0,1,20.82,16c-.14,2.42.13,4.84.13,7.26a32.7,32.7,0,0,1,0,3.43.71.71,0,0,1-.54.7c-.22.05-.7.09-.78-.2s.41-.44.49-.75a4.75,4.75,0,0,0,0-1.25c0-1.31,0-2.62,0-3.93a25.78,25.78,0,0,0-.73-6.68,2.57,2.57,0,0,0-.5-1.1c-.21-.2-.15-.59-.37-.79a9.1,9.1,0,0,1-1.41-2.12,9.33,9.33,0,0,0-.73-.93c-.17-.21-.17-.57-.4-.71a4,4,0,0,0-1.66-.15c-.42,0-1.27-.16-1.62.15-.18.16-.06.89-.06,1.12s-.18,1.11.24,1.29a3.56,3.56,0,0,0,1,.14,10.18,10.18,0,0,1,1.63.31,4.49,4.49,0,0,1,2.31,1.34A6.5,6.5,0,0,1,19.13,16a7.62,7.62,0,0,1,.48,3.63A10.91,10.91,0,0,1,17.28,25c-1.5,1.85-4.07,2.26-6.24,2.75a6.75,6.75,0,0,1-3.34.08c-.93-.28-1.88-.57-2.81-.88a7.45,7.45,0,0,1-1.57-1,5.49,5.49,0,0,1-.83-.77,4,4,0,0,1-.92-.91A11.13,11.13,0,0,1,0,18.14,8.07,8.07,0,0,1,1.53,13.4,3.77,3.77,0,0,1,3.27,12c.85-.33,1.72-.52,2.57-.81.51-.18,1.51.24,1.64-.44.07-.37.19-1.89-.31-1.89S7,3.85,7,3.33a3.62,3.62,0,0,1-1.64-.12A.43.43,0,0,1,5,2.72a1.15,1.15,0,0,1,.21-.43,1.93,1.93,0,0,0,.2-.41.86.86,0,0,1,.85-.47c.46,0,.62-.33,1.07-.33h4a7.07,7.07,0,0,0,1.55,0,7.54,7.54,0,0,0,0-.82c0-.29.58-.22.76-.2.41,0,.58.3.58.74,0,.16-.22.29-.06.44a3.54,3.54,0,0,1,.42.35c.28.28.3.85.52,1.21.55.84.62,2.13,1.33,2.86Z"/></g></g></svg>`,
+    weapon_molotov: `<svg style="width: 0.78em; padding: 0 0.11em; margin-top: 2.2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.37 30"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_molotov" d="M19.59,7.28c-.08.19,0,.42.21.7s.13.64-.17,1.1l-1.31,1.56a2.17,2.17,0,0,1-1.3.67l.37-.61.19,0L19,8.73,18.73,8l-1-.94a4.12,4.12,0,0,0-1.06-.57l-.86-.08L14.48,8.26l-.36.56h.15l-.91,1.1-.52-1a3.2,3.2,0,0,1-.12-1.8l.49-.9a2.17,2.17,0,0,0,0-1.56l.45.17a1.74,1.74,0,0,1,.78.9l.12,1.1,0,.45.61-1.35a2.35,2.35,0,0,0-.53-1.27l-.9-1.14a3.57,3.57,0,0,1-.2-1.72A2.77,2.77,0,0,1,14,0a2.4,2.4,0,0,0,.73,1.51,4.8,4.8,0,0,0,1.76.74.91.91,0,0,1,.7.7l.32.85.46.62c.19.24.34.31.44.2s0-.42-.32-.94a1.49,1.49,0,0,1,.16-1.8,3.15,3.15,0,0,0,1,1.23,3.66,3.66,0,0,1,1.11,1.68l0,.81-.33,1Zm-2.21,3.07,1.23-1.68-.21-.53-.85-.78a4.86,4.86,0,0,0-1-.53l-.57,0L14.76,8.47h0v.24l-3.23,3.93-.73.49-1.23.58a6.11,6.11,0,0,0-2.46,1.75L0,25.49c-.1.27.05.73.46,1.39a6.83,6.83,0,0,0,1.84,1.88A7.14,7.14,0,0,0,4.7,29.91a2.36,2.36,0,0,0,1.47,0l7.12-10a6.74,6.74,0,0,0,.86-2.9,8.6,8.6,0,0,1,.37-2.25l2.66-4.34Z"/></g></g></svg>`,
+    weapon_smokegrenade: `<svg style="width: 0.52em; padding: 0 0.24em; margin-top: 2.2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.78 28"><g id="layer_2" data-name="layer 2"><g id="Ebene_1" data-name="Ebene 1"><path id="weapon_smokegrenade" d="M12.76,15.08V10.8a10.57,10.57,0,0,0-.08-2.2,3.66,3.66,0,0,0-.49-1,1.39,1.39,0,0,1-.13-.72c0-.13-.25-.36-.28-.43-.13-.24-.18-.67-.35-.84-.38-.38-.24-1.19-.62-1.57-.19-.18-.1-.72-.29-.9a2.39,2.39,0,0,1-.39-.76C9.92,1.84,9.7,1.31,9.51.78c0-.29-.2-.11-.28-.29S9.3.12,9.23,0s-.37,0-.42,0C8.51.11,8.2.68,8,1,8.1.58,6.08.78,5.8.78h-2A3.45,3.45,0,0,0,3,.78c-.47.16-.83,1.73-.65,1.73a4.67,4.67,0,0,1,1,.06V4.11c0,.39-.24.62-.24,1,0,.25-.83.26-1.08.31-.51.09-2.46,0-1.93,1.07,0,1.17,0,2.35,0,3.52V26.49c0,.41,1.22.79,1.55.92a10.58,10.58,0,0,0,6.37.2,5.68,5.68,0,0,0,2.2-.85c.18-.13.25,0,.25-.24V6.58a4.23,4.23,0,0,1,.62.79,6.58,6.58,0,0,1,.49.82,5.12,5.12,0,0,1,.49.66,7.64,7.64,0,0,1,0,2.24V24c0,.22-.24.28-.24.64s-.05.33.29.33.22,0,.32-.08c.39-.27.33-.69.33-1.26Zm-2.71,6v.87c0,.66,0,.58-.65.66l-2.73.34a5.66,5.66,0,0,1-1.29.14L.77,22.49c-.33,0-.22-.22-.22-.52v-1l4.84.49a12.27,12.27,0,0,0,2.25-.23l2.41-.26Zm0-11.92V10c0,.65,0,.57-.65.65L6.67,11a5.14,5.14,0,0,1-1.29.13L.77,10.57c-.33,0-.22-.22-.22-.52V9l4.84.49a11.47,11.47,0,0,0,2.25-.24L10.05,9Z"/></g></g></svg>`
 };
 
 const svg_icons = {
@@ -356,7 +360,7 @@ function hud_set_default() {
     header.timers.defuse.hide();
     spectate.specbar.hide();
     spectate.defusing_progress.hide();
-    sidebars.kad_wrap.hide();
+    // sidebars.kad_wrap.hide();
     sidebars.kills_of_players.hide();
     sidebars.team_info.hide();
     misc.timeout.bar.hide();
@@ -388,16 +392,19 @@ function show_timeout() {
 function hide_timeout() {misc.timeout.bar.fadeOut()};
 
 function cut_team_name(team_name) {
-    team_name = team_name.toLowerCase();
-    let cutted_names = {
-        'natus vincere': 'navi',
-        'ninjas in pyjamas': 'nip',
-        'g2 esports': 'g2',
-        'team spirit': 'spirit'
+    if (team_name) {
+        team_name = team_name.toLowerCase();
+        let cutted_names = {
+            'natus vincere': 'navi',
+            'ninjas in pyjamas': 'nip',
+            'g2 esports': 'g2',
+            'team spirit': 'spirit',
+            'copenhagen flames': 'cph'
+        }
+        let result = cutted_names[team_name];
+    
+        if (result != undefined) {return result} else {return team_name}
     }
-    let result = cutted_names[team_name];
-
-    if (result != undefined) {return result} else {return team_name}
 }
 
 function define_round_type(round_type) {
@@ -445,9 +452,36 @@ function define_spec_c4(player) {
     }
 }
 
-// function define_primary_weapon(player) {
-    
-// }
+function define_primary_weapon(player) {
+    for (let i = 0; i < Object.keys(player).length; i++) {
+        if (player[`weapon_${i}`].name in svg_weapons_primary) {
+            return player[`weapon_${i}`].name;
+        }
+    }
+}
+
+function define_secondary_weapon(player) {
+    for (let i = 0; i < Object.keys(player).length; i++) {
+        if (player[`weapon_${i}`].name in svg_weapons_secondary) {
+            return player[`weapon_${i}`].name;
+        }
+    }
+}
+
+function define_grenades(player) {
+    let result = [];
+    for (let i = 0; i < Object.keys(player).length; i++) {
+        if (player[`weapon_${i}`].name in svg_weapons_grenades) {
+            if (player[`weapon_${i}`].name == 'weapon_flashbang' && player[`weapon_${i}`].ammo_reserve == 2) {
+                result.push(player[`weapon_${i}`].name);
+                result.push(player[`weapon_${i}`].name);
+            } else {
+                result.push(player[`weapon_${i}`].name);
+            }
+        }
+    }
+    return result.sort();
+}
 
 // FUNCTIONS
 
@@ -596,22 +630,24 @@ socket.on('getData', (data) => {
     //Setting rounds win
     misc.rounds_top.empty();
     misc.rounds_bottom.empty();
-    for (let rounds_played = 0; rounds_played < Object.keys(data.map.round_wins).length; rounds_played++) {
-        if (rounds_played < 15) {
-            if (data.map.round_wins[rounds_played + 1].charAt(0) == 'c') {
-                misc.rounds_top.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
-            } else {
-                misc.rounds_bottom.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
-            }
-        } else if (rounds_played < 30) {
-            if (data.map.round_wins[rounds_played + 1].charAt(0) == 'c') {
-                misc.rounds_bottom.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
-            } else {
-                misc.rounds_top.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
+    if (data.map.round_wins) {
+        for (let rounds_played = 0; rounds_played < Object.keys(data.map.round_wins).length; rounds_played++) {
+            if (rounds_played < 15) {
+                if (data.map.round_wins[rounds_played + 1].charAt(0) == 'c') {
+                    misc.rounds_top.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
+                } else {
+                    misc.rounds_bottom.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
+                }
+            } else if (rounds_played < 30) {
+                if (data.map.round_wins[rounds_played + 1].charAt(0) == 'c') {
+                    misc.rounds_bottom.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
+                } else {
+                    misc.rounds_top.append(`<div class='round_won' style='margin-left: ${rounds_played * 1.51}em' id='round_${rounds_played + 1}'>${define_round_type(data.map.round_wins[rounds_played + 1])}</div>`);
+                }
             }
         }
     }
-
+    
 
     //Setting bomb timer and defuse timer
     if (data.bomb.state != bomb_state_local) {
@@ -776,26 +812,39 @@ socket.on('getData', (data) => {
         spectate.defuser.empty();
     }
     //defusing
+    function defusing_spec(state) {
+        if (state == true) {
+            spectate.defusing_progress.show();
+            spectate.defusing_player.empty().append(player_under_spec.name);
+            spectate.defusing_timer_text.empty().append(countdown);
+            spectate.defusing_timer_line.animate({
+                width: '15em'
+            }, {duration: (countdown * 1000), easing: 'linear'});
+
+            if (player_under_spec.state.defusekit == true) {
+                spectate.defusing_hasKits_text.empty().append(`розміновує бомбу з набором розмінування`);
+            } else {
+                spectate.defusing_hasKits_text.empty().append(`розміновує бомбу без набору розмінування`);
+            }
+        } else {
+            spectate.defusing_progress.hide();
+        }
+    }
+
     if (bomb_state_local == 'defusing') {
         for (let i = -20; i <= 20; i++) {
             if (player_under_spec.steamid == (data.bomb.player + i)) {
-                spectate.defusing_progress.show();
-                spectate.defusing_player.empty().append(player_under_spec.name);
-                spectate.defusing_timer_text.empty().append(countdown_seconds);
-                spectate.defusing_timer_line.animate({
-                    width: '15em'
-                }, {duration: (countdown * 1000), easing: 'linear'});
-
-                if (player_under_spec.state.defusekit == true) {
-                    spectate.defusing_hasKits_text.empty().append(`розміновує бомбу з набором розмінування`);
-                } else {
-                    spectate.defusing_hasKits_text.empty().append(`розміновує бомбу без набору розмінування`);
-                }
+                defusing_spec(true);
+                break;
+            } else {
+                defusing_spec(false);
             }
         }
     } else {
         spectate.defusing_progress.hide();
     }
+
+    
     //white spec-border
     switch (player_under_spec.observer_slot) {
         case 1:
@@ -842,5 +891,201 @@ socket.on('getData', (data) => {
             break;
     }
     
+
+    // SIDEBARS
+
+
+    //Setting allplayers
+    let local_players = {
+        player_1: '',
+        player_2: '',
+        player_3: '',
+        player_4: '',
+        player_5: '',
+        player_6: '',
+        player_7: '',
+        player_8: '',
+        player_9: '',
+        player_0: ''
+    }
+
+    let playersArray = Object.keys(data.allplayers);
+
+    for (let i = 0; i < playersArray.length; i++) {
+        for (let j = 0; j < 10; j++) {
+            if (data.allplayers[playersArray[i]].observer_slot == j) {
+                local_players[`player_${j}`] = data.allplayers[playersArray[i]];
+            } 
+        }       
+    }
+
+    //Setting team info
+    let team_money_1_5 = local_players.player_1.state.money + local_players.player_2.state.money + local_players.player_3.state.money + local_players.player_4.state.money + local_players.player_5.state.money;
+    let team_money_6_0 = local_players.player_6.state.money + local_players.player_7.state.money + local_players.player_8.state.money + local_players.player_9.state.money + local_players.player_0.state.money;
+    let team_equip_1_5 = local_players.player_1.state.equip_value + local_players.player_2.state.equip_value + local_players.player_3.state.equip_value + local_players.player_4.state.equip_value + local_players.player_5.state.equip_value;
+    let team_equip_6_0 = local_players.player_6.state.equip_value + local_players.player_7.state.equip_value + local_players.player_8.state.equip_value + local_players.player_9.state.equip_value + local_players.player_0.state.equip_value;
+
+    if (match_period == 1) {
+        sidebars.left_team_info.team_side_logo.attr('src', '/img/logos/ct.png');
+        sidebars.left_team_info.team_money_value.css('color', 'dodgerblue');
+        sidebars.left_team_info.team_money_text.css('color', 'dodgerblue');
+        sidebars.left_team_info.team_equip_value.css('color', 'dodgerblue');
+        sidebars.left_team_info.team_equip_text.css('color', 'dodgerblue');
+        
+        sidebars.left_team_info.team_money_value.empty().append('$' + team_money_1_5);
+        sidebars.left_team_info.team_equip_value.empty().append('$' + team_equip_1_5);
+
+        sidebars.right_team_info.team_side_logo.attr('src', '/img/logos/t.png');
+        sidebars.right_team_info.team_money_value.css('color', 'goldenrod');
+        sidebars.right_team_info.team_money_text.css('color', 'goldenrod');
+        sidebars.right_team_info.team_equip_value.css('color', 'goldenrod');
+        sidebars.right_team_info.team_equip_text.css('color', 'goldenrod');
+
+        sidebars.right_team_info.team_money_value.empty().append(team_money_6_0 + '$');
+        sidebars.right_team_info.team_equip_value.empty().append(team_equip_6_0 + '$');
+    } else {
+        if (data.map.phase != 'intermission') {
+            sidebars.left_team_info.team_side_logo.attr('src', '/img/logos/t.png');
+            sidebars.left_team_info.team_money_value.css('color', 'goldenrod');
+            sidebars.left_team_info.team_money_text.css('color', 'goldenrod');
+            sidebars.left_team_info.team_equip_value.css('color', 'goldenrod');
+            sidebars.left_team_info.team_equip_text.css('color', 'goldenrod');
+    
+            sidebars.left_team_info.team_money_value.empty().append('$' + team_money_1_5);
+            sidebars.left_team_info.team_equip_value.empty().append('$' + team_equip_1_5);
+    
+            sidebars.right_team_info.team_side_logo.attr('src', '/img/logos/ct.png');
+            sidebars.right_team_info.team_money_value.css('color', 'dodgerblue');
+            sidebars.right_team_info.team_money_text.css('color', 'dodgerblue');
+            sidebars.right_team_info.team_equip_value.css('color', 'dodgerblue');
+            sidebars.right_team_info.team_equip_text.css('color', 'dodgerblue');
+            
+            sidebars.right_team_info.team_money_value.empty().append(team_money_6_0 + '$');
+            sidebars.right_team_info.team_equip_value.empty().append(team_equip_6_0 + '$');
+        }
+    }
+
+    if (data.round.phase == 'freezetime' || data.phase_countdowns.phase == 'freezetime') {
+        sidebars.team_info.show();
+    } else {
+        setTimeout(() => {
+            sidebars.team_info.fadeOut();
+        }, 3000); 
+    }
+
+    //players
+    for (let i = 0; i < 10; i++) {
+        let this_player = sidebars[`player${i}`];
+
+        this_player.nickname.empty().append(local_players[`player_${i}`].name);
+        this_player.hp_text.empty().append(local_players[`player_${i}`].state.health);
+        this_player.hp_bar.css('width', `${15.5 * local_players[`player_${i}`].state.health / 100}em`);
+        
+        if (local_players[`player_${i}`].team == 'CT') {
+            this_player.hp_bar.css('background', 'dodgerblue');
+        } else {
+            this_player.hp_bar.css('background', 'goldenrod ');
+        }
+        
+        if (local_players[`player_${i}`].state.health <= 0) {
+            this_player.hp_text.css('background', 'transparent');
+            $(`#p${i}`).css('width', '10em');
+            this_player.hp_text.empty().append(svg_icons.dead);
+            this_player.hp_text.css('filter', 'brightness(0) invert(1)');
+        } else if (local_players[`player_${i}`].state.health <= 20) {
+            this_player.hp_text.css('background', 'darkred');
+        } else {
+            if (local_players[`player_${i}`].team == 'CT') {
+                this_player.hp_text.css('background', '#145ea8');
+            } else {
+                this_player.hp_text.css('background', '#916e16');
+            }
+            $(`#p${i}`).css('width', '18em');
+            this_player.hp_text.css('filter', 'none');
+        }
+
+        this_player.money.empty().append('$' + local_players[`player_${i}`].state.money);
+        
+        let prim_weap = define_primary_weapon(local_players[`player_${i}`].weapons);
+        let sec_weap = define_secondary_weapon(local_players[`player_${i}`].weapons);
+
+        this_player.primary_weapon.empty().append(svg_weapons_primary[prim_weap]);
+        this_player.secondary_weapon.empty().append(svg_weapons_secondary[sec_weap]);
+
+        this_player.kad.empty().append(`${local_players[`player_${i}`].match_stats.kills}/${local_players[`player_${i}`].match_stats.assists}/${local_players[`player_${i}`].match_stats.deaths}`)
+
+        if (data.round.phase == 'freezetime' || data.phase_countdowns.phase == 'freezetime') {
+            $(`#p${i} .kad_wrap`).fadeIn(500);
+        } else {
+            setTimeout(() => {
+                $(`#p${i} .kad_wrap`).fadeOut(500);
+            }, 3000);
+        }
+
+        if (local_players[`player_${i}`].state.defusekit && local_players[`player_${i}`].state.defusekit == true) {
+            this_player.equip.empty().append(svg_icons.defuser);
+        } else if (define_spec_c4(local_players[`player_${i}`].weapons) == true) {
+            this_player.equip.empty().append(svg_icons.weapon_c4);
+        } else {
+            this_player.equip.empty()
+        }
+
+        if (local_players[`player_${i}`].state.armor > 0) {
+            if (local_players[`player_${i}`].state.helmet == true) {
+                this_player.kevlar.empty().append(svg_icons.kevlar_helmet);
+            } else {
+                this_player.kevlar.empty().append(svg_icons.kevlar);
+            }
+            
+        } else {
+            this_player.kevlar.empty()
+        }
+
+        let player_grenades = define_grenades(local_players[`player_${i}`].weapons);
+
+        if (player_grenades.length > 0) {
+            this_player[`gr_slot1`].empty();
+            this_player[`gr_slot2`].empty();
+            this_player[`gr_slot3`].empty();
+            this_player[`gr_slot4`].empty();
+            for (let j = 0; j < player_grenades.length; j++) {
+                this_player[`gr_slot${j + 1}`].empty().append(svg_weapons_grenades[player_grenades[j]])
+            }
+        } else {
+            for (let k = 0; k < 4; k++) {
+                this_player[`gr_slot${k + 1}`].empty();
+            }
+        }
+
+        let kills_per_round = local_players[`player_${i}`].state.round_kills;
+
+        if (kills_per_round > 0) {
+            $(`#p${i} .kills`).show();
+            if (i >= 1 && i <= 5) {
+                this_player.kills.empty().append(`x ${kills_per_round}`);
+            } else {
+                this_player.kills.empty().append(`${kills_per_round} x`);
+            }
+
+            if (local_players[`player_${i}`].state.health <= 0) {
+                if (i >= 1 && i <= 5) {
+                    $(`#p${i} .kills`).css('left', '10.5em');
+                } else {
+                    $(`#p${i} .kills`).css('right', '10.5em');
+                } 
+            } else {
+                if (i >= 1 && i <= 5) {
+                    $(`#p${i} .kills`).css('left', '18.5em');
+                } else {
+                    $(`#p${i} .kills`).css('right', '18.5em');
+                } 
+            }
+        } else {
+            this_player.kills.empty();
+            $(`#p${i} .kills`).hide();
+        }
+        
+    }
+
     console.log(data);
 });
