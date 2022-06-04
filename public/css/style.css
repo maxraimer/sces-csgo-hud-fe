@@ -427,7 +427,7 @@ div {
 
 #left_team_info .team_money_value {
     left: 2.85em;
-    top: 0.9em;
+    top: 1em;
 }
 
 #left_team_info .team_equip_text {
@@ -437,7 +437,7 @@ div {
 
 #left_team_info .team_equip_value {
     left: 7.4em;
-    top: 0.9em;
+    top: 1em;
 }
 
 #right_team_info .team_money_text {
@@ -447,7 +447,7 @@ div {
 
 #right_team_info .team_money_value {
     right: 2.85em;
-    top: 0.9em;
+    top: 1em;
     text-align: right;
 }
 
@@ -458,7 +458,7 @@ div {
 
 #right_team_info .team_equip_value {
     right: 7.4em;
-    top: 0.9em;
+    top: 1em;
     text-align: right;
 }
 
@@ -535,10 +535,11 @@ div {
 }
 
 .player.left .secondary_weapon {
-    padding-top: 2.25em;
+    padding-top: 2.3em;
     filter: invert(1);
-    right: 0.25em;
+    right: 0em;
     text-align: right;
+    transform: scale(0.7);
 }
 
 .player.left .kevlar_slot {
@@ -552,40 +553,41 @@ div {
 .player.left .gr_slot1 {
     filter: invert(1);
     color: #fff;
-    right: 3.5em;
-    padding-top: 2.4em;
-    transform: scale(0.8);
+    right: 3.6em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.left .gr_slot2 {
     filter: invert(1);
     color: #fff;
-    right: 4.5em;
-    padding-top: 2.4em;
-    transform: scale(0.8);
+    right: 4.7em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.left .gr_slot3 {
     filter: invert(1);
     color: #fff;
-    right: 5.5em;
-    padding-top: 2.4em;
-    transform: scale(0.8);
+    right: 5.8em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.left .gr_slot4 {
     filter: invert(1);
     color: #fff;
-    right: 6.5em;
-    padding-top: 2.4em;
-    transform: scale(0.8);
+    right: 6.9em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.left .kad_wrap {
     background: var(--bg-secondary-color);
     width: 7em;
     height: 3.5em;
-    left: 18em;
+    left: 18.5em;
+    white-space: nowrap;
 }
 
 .player.left .kad_span {
@@ -676,11 +678,11 @@ div {
 }
 
 .player.right .secondary_weapon {
-    padding-top: 2.25em;
+    padding-top: 2.3em;
     filter: invert(1);
-    left: 0.25em;
+    left: 0em;
     text-align: left;
-    transform: scale(-1, 1);
+    transform: scale(-0.7, 0.7);
 }
 
 .player.right .kevlar_slot {
@@ -695,44 +697,41 @@ div {
 .player.right .gr_slot1 {
     filter: invert(1);
     color: #fff;
-    left: 3.5em;
-    padding-top: 2.4em;
-    text-align: right;
-    transform: scale(0.8);
+    left: 3.6em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.right .gr_slot2 {
     filter: invert(1);
     color: #fff;
-    left: 4.5em;
-    padding-top: 2.4em;
-    text-align: right;
-    transform: scale(0.8);
+    left: 4.7em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.right .gr_slot3 {
     filter: invert(1);
     color: #fff;
-    left: 5.5em;
-    padding-top: 2.4em;
-    text-align: right;
-    transform: scale(0.8);
+    left: 5.8em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.right .gr_slot4 {
     filter: invert(1);
     color: #fff;
-    left: 6.5em;
-    padding-top: 2.4em;
-    text-align: right;
-    transform: scale(0.8);
+    left: 6.9em;
+    transform: scale(0.9);
+    margin-top: 0.1em;
 }
 
 .player.right .kad_wrap {
     background: var(--bg-secondary-color);
     width: 7em;
     height: 3.5em;
-    right: 18em;
+    right: 18.5em;
+    white-space: nowrap;
 }
 
 .player.right .kad_span {
@@ -805,7 +804,7 @@ div {
 #match_rounds_bar {
     width: 45em;
     height: 3.8em;
-    background: var(--bg-secondary-color);
+    background: var(--bg-primary-color);
     left: 50%;
     top: 6.5em;
     transform: translateX(-50%);
@@ -860,7 +859,7 @@ div {
 #lose_bonus_bar {
     width: 20em;
     height: 2em;
-    background: var(--bg-secondary-color);
+    background: var(--bg-primary-color);
     left: 50%;
     top: 6.5em;
     transform: translateX(-50%);
@@ -895,8 +894,9 @@ div {
 #round_winner_bar {
     width: 14em;
     height: 5em;
+    padding: 0 1em;
     background: var(--bg-primary-color);
-    transform: skewX(-20deg) translateX(-50%);
+    transform: translateX(-50%);
     left: 50%;
     top: 10em;
 }
@@ -905,18 +905,17 @@ div {
     width: 4em;
     height: 4em;
     margin: 0.5em;
-    left: 1em;
+    left: 1.5em;
     position: absolute;
-    transform: skewX(20deg);
 }
 
 #round_winner_bar .round_winner_text {
-    left: 7em;
+    left: 7.5em;
     width: 5em;
     height: 2.5em;
     top: 1.25em;
     color: #fff;
-    transform: skewX(20deg) scale(1.2);
+    transform: scale(1.2);
 }
 
 /* MISC */
