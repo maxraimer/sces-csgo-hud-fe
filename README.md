@@ -5,6 +5,7 @@
 2. Fixed view of teams while intermission. _(v1.1)_
 3. Fixed view of KAD and Economy (was blinking, now doesn't). _(v1.1)_
 4. Started to develop custom radar. Temporarily not fully-functional. _(v1.1)_
+5. Changed icon of c4. _(v1.1)_
 
 ### Known bugs:
 
