@@ -30,6 +30,7 @@ app.post('/', (req, res) => {
             connections[i].emit('getData', JSON.stringify(data));
         }
     });
+    
 
     req.on('end', () => {
         res.end('');
@@ -40,6 +41,10 @@ app.post('/', (req, res) => {
 
 app.get('/cp', (req, res) => {
     res.sendFile(__dirname + '/control.html');
+});
+
+app.get('/radar', (req, res) => {
+    res.sendFile(__dirname + '/radar.html');
 });
 
 
