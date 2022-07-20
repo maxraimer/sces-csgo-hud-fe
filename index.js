@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/teams', (req, res) => {
+    res.sendFile(__dirname + '/public/js/teams.json');
+});
+
 app.post('/', (req, res) => {
     let date = new Date();
     console.log(`\x1b[32m[${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}]` + "\x1b[36m>>> Updating data from CS:GO...");
