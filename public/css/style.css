@@ -6,8 +6,9 @@
     --bg-alt-secondary-color: #101040cc;
     --bg-alt-light-color: #293fad;
     --color-one: #1e90ff;
-    --color-alt-two: #c61515;
+    --color-one-dark: #145ea8;
     --color-two: #daa520;
+    --color-two-dark: #916e16;
 }
 
 * {
@@ -31,6 +32,7 @@ div {
     background-size: cover;
     top: 0.5em;
     right: calc(50% + 22em);
+    border-radius: 0.5em 0 0 0.5em;
 }
 
 #right_team_logo {
@@ -40,6 +42,7 @@ div {
     background-size: cover;
     top: 0.5em;
     left: calc(50% + 22em);
+    border-radius: 0 0.5em 0.5em 0;
 }
 
 #left_team_logo img, #right_team_logo img {
@@ -141,21 +144,23 @@ div {
 }
 
 #bomb_timer {
-    width: 50em;
+    width: 49em;
     height: 0.25em;
     background: red;
     left: 50%;
     top: 3.5em;
     transform: translateX(-50%);
+    border-radius: 0.5em;
 }
 
 #defuse_timer {
-    width: 50em;
+    width: 49em;
     height: 0.25em;
-    background: var(--color-one);
+    background: dodgerblue;
     left: 50%;
     top: 3.75em;
     transform: translateX(-50%);
+    border-radius: 0.5em;
 }
 
 #series {
@@ -164,6 +169,7 @@ div {
     background: var(--bg-primary-color);
     top: 4em;
     left: calc(50% - 7em);
+    border-radius: 0.5em;
 }
 
 .circle {
@@ -229,6 +235,7 @@ div {
     height: 3em;
     top: 0;
     background: var(--bg-primary-color);
+    border-radius: 0.5em;
 }
 
 #spec_primary_line img {
@@ -267,6 +274,7 @@ div {
     background: var(--bg-secondary-color);
     bottom: 0;
     left: calc(50% - 9em);
+    border-radius: 0 0 0.5em 0.5em;
 }
 
 #spec_kad_title {
@@ -334,18 +342,21 @@ div {
     bottom: 18em;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 0.5em;
 }
 
 #defusing_timer_background {
     width: 15em;
     height: 4em;
     background: var(--bg-secondary-color);
+    border-radius: 0.5em;
 }
 
 #defusing_timer_line {
     width: 0em;
     height: 4em;
     background: var(--bg-alt-primary-color);
+    border-radius: 0.5em;
 }
 
 #defusing_name {
@@ -364,7 +375,7 @@ div {
 
 #defusing_timer {
     font-size: 3em;
-    color: var(--color-one);
+    color: dodgerblue;
     width: 1.5em;
     left: 0.15em;
     top: 0.05em;
@@ -378,6 +389,7 @@ div {
     left: 0.5em;
     top: 29em;
     white-space: nowrap;
+    border-radius: 0.5em;
 }
 
 /* SPECTATE */
@@ -389,6 +401,7 @@ div {
     height: 3.5em;
     background: var(--bg-secondary-color);
     top: 25em;
+    border-radius: 0.5em;
 }
 
 #left_team_info {
@@ -423,49 +436,58 @@ div {
 #left_team_info .team_money_text {
     left: 5em;
     top: 0.7em;
+    white-space: nowrap;
 }
 
 #left_team_info .team_money_value {
     left: 2.85em;
     top: 1em;
+    white-space: nowrap;
 }
 
 #left_team_info .team_equip_text {
     left: 13em;
     top: 0.7em;
+    white-space: nowrap;
 }
 
 #left_team_info .team_equip_value {
     left: 7.4em;
     top: 1em;
+    white-space: nowrap;
 }
 
 #right_team_info .team_money_text {
     right: 5em;
     top: 0.7em;
+    white-space: nowrap;
 }
 
 #right_team_info .team_money_value {
     right: 2.85em;
     top: 1em;
     text-align: right;
+    white-space: nowrap;
 }
 
 #right_team_info .team_equip_text {
     right: 13em;
     top: 0.7em;
+    white-space: nowrap;
 }
 
 #right_team_info .team_equip_value {
     right: 7.4em;
     top: 1em;
     text-align: right;
+    white-space: nowrap;
 }
 
 .player {
     width: 18em;
     height: 3.5em;
     background: var(--bg-secondary-color);
+    border-radius: 0.5em;
 }
 
 #p1 {left: 0.5em; top: 29em;}
@@ -487,6 +509,7 @@ div {
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
+    border-radius: 0.5em 0 0 0;
 }
 
 .player.left .hp_bar {
@@ -497,13 +520,13 @@ div {
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
+    border-radius: 0 0.5em 0 0;
 }
 
 .player.left .nickname {
     color: #fff;
-    font-size: 1.2em;
-    left: 2.3em;
-    padding-top: 0.3em;
+    left: 3em;
+    padding-top: 0.4em;
     font-weight: 700;
 }
 
@@ -588,6 +611,7 @@ div {
     height: 3.5em;
     left: 18.5em;
     white-space: nowrap;
+    border-radius: 0.5em;
 }
 
 .player.left .kad_span {
@@ -598,9 +622,9 @@ div {
 }
 
 .player.left .kad {
-    font-size: 1.5em;
+    font-size: 1.3em;
     left: 0.3em;
-    top: 1em;
+    top: 1.2em;
     color: #fff;
     font-weight: 700;
 }
@@ -620,6 +644,16 @@ div {
     vertical-align: top;
 }
 
+.player.left .spent_money {
+    left: 27em;
+    width: 10em;
+    top: 1.1em;
+    text-align: left;
+    transform: scale(1.2);
+    color: red;
+    font-weight: 700;
+}
+
 .player.right .hp_text {
     width: 2.5em;
     height: 1em;
@@ -628,6 +662,7 @@ div {
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
+    border-radius: 0 0.5em 0 0;
 }
 
 .player.right .hp_bar {
@@ -638,13 +673,13 @@ div {
     text-align: center;
     padding: 0.35em 0 0.65em 0;
     color: #fff;
+    border-radius: 0.5em 0 0 0;
 }
 
 .player.right .nickname {
     color: #fff;
-    font-size: 1.2em;
-    right: 2.3em;
-    padding-top: 0.3em;
+    right: 3em;
+    padding-top: 0.4em;
     font-weight: 700;
 }
 
@@ -732,6 +767,7 @@ div {
     height: 3.5em;
     right: 18.5em;
     white-space: nowrap;
+    border-radius: 0.5em;
 }
 
 .player.right .kad_span {
@@ -743,9 +779,9 @@ div {
 }
 
 .player.right .kad {
-    font-size: 1.5em;
+    font-size: 1.3em;
     right: 0.3em;
-    top: 1em;
+    top: 1.2em;
     color: #fff;
     font-weight: 700;
     text-align: right;
@@ -767,6 +803,16 @@ div {
     vertical-align: top;
 }
 
+.player.right .spent_money {
+    right: 27em;
+    width: 10em;
+    top: 1.1em;
+    text-align: right;
+    transform: scale(1.2);
+    color: red;
+    font-weight: 700;
+}
+
 /* SIDEBARS */
 
 /* MISC */
@@ -778,6 +824,7 @@ div {
     background: var(--bg-secondary-color);
     right: 1em;
     top: 0.6em;
+    border-radius: 0.5em;
 }
 
 #timeout_team_logo {
@@ -809,6 +856,7 @@ div {
     top: 6.5em;
     transform: translateX(-50%);
     padding: 0.15em 0.5em;
+    border-radius: 0.5em;
 }
 
 #round_divider_vertical {
@@ -863,6 +911,7 @@ div {
     left: 50%;
     top: 6.5em;
     transform: translateX(-50%);
+    border-radius: 0.5em;
 }
 
 .lose_bonus_text {
@@ -898,7 +947,8 @@ div {
     background: var(--bg-primary-color);
     transform: translateX(-50%);
     left: 50%;
-    top: 10em;
+    top: 10em;    
+    border-radius: 0.5em;
 }
 
 #round_winner_logo {
@@ -921,5 +971,5 @@ div {
 /* MISC */
 
 body {
-    background: #111;
+    /* background: #111; */
 }

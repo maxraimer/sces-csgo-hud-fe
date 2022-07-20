@@ -1,0 +1,62 @@
+:root {
+    --bg-primary-color: #282828;
+    --bg-secondary-color: #282828cc;
+    --bg-light-color: #444444;
+    --bg-alt-primary-color: #101040;
+    --bg-alt-secondary-color: #101040cc;
+    --bg-alt-light-color: #293fad;
+    --color-one: #1e90ff;
+    --color-one-dark: #145ea8;
+    --color-two: #daa520;
+    --color-two-dark: #916e16;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    user-select: none;
+}
+
+div {
+    position: absolute;
+}
+
+body {
+    /* background: #111; */
+}
+
+#radar_bg {
+    height: 1000px;
+    max-width: 1000px;
+}
+
+#radar_dots {
+    width: 100vh;
+    height: 100vh;
+    top: 0;
+}
+
+.dot {
+    width: 1.2em;
+    height: 1.2em;
+    background: red;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0.5em;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.name {
+    font-size: 1.2em;
+    text-align: center;
+    transform: translate(-50%, -190%);
+}
+
+#bomb {
+    border-radius: 0.2em;
+    height: 0.8em;
+}
