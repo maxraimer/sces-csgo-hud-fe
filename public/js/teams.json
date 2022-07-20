@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "NURE InFlight",
+        "primary_color": "#ff0000",
+        "secondary_color": "#750000",
+        "logo": "/img/logos/nif.png"
+    },
+    {
+        "id": 2,
+        "name": "Natus Expectare",
+        "primary_color": "#0056ed",
+        "secondary_color": "#002a75",
+        "logo": "/img/logos/ne.png"
+    },
+    {
+        "id": 3,
+        "name": "KHNEU Gods",
+        "primary_color": "#eabb01",
+        "secondary_color": "#a38200",
+        "logo": "/img/logos/kg.png"
+    },
+    {
+        "id": 4,
+        "name": "NoMercy",
+        "primary_color": "#1e9041",
+        "secondary_color": "#004223",
+        "logo": "/img/logos/nm.png"
+    },
+    {
+        "id": 5,
+        "name": "HaMasse",
+        "primary_color": "#8100b4",
+        "secondary_color": "#480042",
+        "logo": "/img/logos/hm.png"
+    }
+]
