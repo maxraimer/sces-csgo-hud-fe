@@ -337,7 +337,7 @@ div {
 }
 
 #defusing_bar {
-    width: 15em;
+    width: 20em;
     height: 4em;
     bottom: 18em;
     left: 50%;
@@ -346,7 +346,7 @@ div {
 }
 
 #defusing_timer_background {
-    width: 15em;
+    width: 20em;
     height: 4em;
     background: var(--bg-secondary-color);
     border-radius: 0.5em;
@@ -362,23 +362,23 @@ div {
 #defusing_name {
     font-size: 1.5em;
     color: #fff;
-    left: 3.7em;
+    left: 4.8em;
     top: 0.1em;
 }
 
 #defusing_text {
     font-size: 0.8em;
     color: #fff;
-    left: 7em;
+    left: 9em;
     top: 2.3em;
 }
 
 #defusing_timer {
-    font-size: 3em;
+    font-size: 2em;
     color: dodgerblue;
     width: 1.5em;
-    left: 0.15em;
-    top: 0.05em;
+    left: 0.3em;
+    top: 0.4em;
     text-align: center;
 }
 
@@ -941,35 +941,32 @@ div {
 #lose_right_4 {right: 0.3em}
 
 #round_winner_bar {
-    width: 14em;
-    height: 5em;
+    width: 16em;
+    height: 7em;
     padding: 0 1em;
     background: var(--bg-primary-color);
     transform: translateX(-50%);
     left: 50%;
-    top: 10em;    
+    top: 6.6em;    
     border-radius: 0.5em;
 }
 
 #round_winner_logo {
     width: 4em;
     height: 4em;
-    margin: 0.5em;
-    left: 1.5em;
+    margin-top: 0.5em;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #round_winner_bar .round_winner_text {
-    left: 7.5em;
-    width: 5em;
+    width: 16em;
     height: 2.5em;
-    top: 1.25em;
+    top: 5em;
     color: #fff;
     transform: scale(1.2);
+    text-align: center;
 }
 
 /* MISC */
-
-body {
-    /* background: #111; */
-}
