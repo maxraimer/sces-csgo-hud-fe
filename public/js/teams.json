@@ -33,5 +33,33 @@
         "primary_color": "#8100b4",
         "secondary_color": "#480042",
         "logo": "/img/logos/hm.png"
+    },
+    {
+        "id": 6,
+        "name": "Green Lamas",
+        "primary_color": "#4cc15f",
+        "secondary_color": "#2a893a",
+        "logo": "/img/logos/lamas.png"
+    },
+    {
+        "id": 7,
+        "name": "Purple Rabbits",
+        "primary_color": "#6d50ad",
+        "secondary_color": "#4b2f8a",
+        "logo": "/img/logos/rabbits.png"
+    },
+    {
+        "id": 8,
+        "name": "Team Banana",
+        "primary_color": "#f1b10e",
+        "secondary_color": "#be780a",
+        "logo": "/img/logos/banana.png"
+    },
+    {
+        "id": 9,
+        "name": "Team Grape",
+        "primary_color": "#981ce3",
+        "secondary_color": "#5e13c4",
+        "logo": "/img/logos/grape.png"
     }
 ]

@@ -376,7 +376,7 @@ function hud_set_default() {
     header.timers.bomb.hide();
     header.timers.defuse.hide();
     spectate.specbar.hide();
-    spectate.defusing_progress.hide();
+    // spectate.defusing_progress.hide();
     sidebars.kad_wrap.hide();
     sidebars.spent_money.hide();
     sidebars.kills_of_players.hide();
@@ -387,11 +387,13 @@ function hud_set_default() {
     misc.round_winner_bar.hide();
 };
 
+misc.round_winner_logo.attr('src', '/img/logos/ct.png')
+
 function show_winner_tab() {
     misc.round_winner_bar.show();
     misc.round_winner_bar.css('width', '0em');
     misc.round_winner_bar.animate({
-        width: '14em'
+        width: '16em'
     }, 500);
 };
 
@@ -552,7 +554,7 @@ socket.on('getData', (data) => {
     } else if (data.phase_countdowns.phase == 'freezetime' || data.round.phase == 'freezetime') {
         header.match_status.timer.css('color', '#daa520');
     } else if (data.bomb.state == 'defusing') {
-        header.match_status.timer.css('color', 'var(--color-one)');
+        header.match_status.timer.css('color', 'dodgerblue');
     } else {
         header.match_status.timer.css('color', '#fff');
     }
@@ -799,6 +801,7 @@ socket.on('getData', (data) => {
         if (data.round.phase == 'over') {
             if (data.round.win_team == 'T') {
                 misc.round_winner_logo.attr('src', '/img/logos/t.png');
+                misc.round_winner_bar.css('background', 'var(--bg-primary-color)');
                 for (let i = 0; i < teams.length; i++) {
                     if (data.map.team_t.name && data.map.team_t.name.toUpperCase() == teams[i].name.toUpperCase()) {
                         misc.round_winner_logo.attr('src', teams[i].logo);
@@ -807,6 +810,7 @@ socket.on('getData', (data) => {
                 }
             } else if (data.round.win_team == 'CT') {
                 misc.round_winner_logo.attr('src', '/img/logos/ct.png');
+                misc.round_winner_bar.css('background', 'var(--bg-primary-color)');
                 for (let i = 0; i < teams.length; i++) {
                     if (data.map.team_ct.name && data.map.team_ct.name.toUpperCase() == teams[i].name.toUpperCase()) {
                         misc.round_winner_logo.attr('src', teams[i].logo);
@@ -950,41 +954,44 @@ socket.on('getData', (data) => {
         spectate.defuser.empty();
     }
     //defusing
-    // spectate.defusing_timer_line.css('width', '0em');
-    // function defusing_spec(state) {
-    //     if (state == true) {
-    //         spectate.defusing_progress.show();
-    //         spectate.defusing_player.empty().append(player_under_spec.name);
-    //         spectate.defusing_timer_text.empty().append(data.phase_countdowns.phase_ends_in);
 
-    //         spectate.defusing_timer_line.animate({
-    //             width: '15em'
-    //         }, {duration: (countdown * 1000), easing: 'linear'});
+    function defusing_fill_bar() {
+        spectate.defusing_player.empty().append(player_under_spec.name);
+        spectate.defusing_timer_text.empty().append((((parseFloat(data.bomb.countdown) * 1000) - 100) / 1000).toFixed(3));
 
-    //         let spec_milsec;
+        spectate.defusing_timer_line.animate({
+            width: '20em'
+        }, {duration: ((countdown * 1000) - 100), easing: 'linear'});
+        if (player_under_spec.state.defusekit == true) {
+            spectate.defusing_hasKits_text.empty().append(`розміновує бомбу з набором розмінування`);
 
-    //         if (player_under_spec.state.defusekit == true) {
-    //             spectate.defusing_hasKits_text.empty().append(`розміновує бомбу з набором розмінування`);
-    //         } else {
-    //             spectate.defusing_hasKits_text.empty().append(`розміновує бомбу без набору розмінування`);
-    //         }
-    //     } else {
-    //         spectate.defusing_progress.hide();
-    //     }
-    // }
+        } else {
+            spectate.defusing_hasKits_text.empty().append(`розміновує бомбу без набору розмінування`);
+        }
+    }
 
-    // if (bomb_state_local == 'defusing') {
-    //     for (let i = -20; i <= 20; i++) {
-    //         if (player_under_spec.steamid == (data.bomb.player + i)) {
-    //             defusing_spec(true);
-    //             break;
-    //         } else {
-    //             defusing_spec(false);
-    //         }
-    //     }
-    // } else {
-    //     spectate.defusing_progress.hide();
-    // }
+    function defusing_spec(state) {
+        if (state == true) {
+            spectate.defusing_progress.show();
+        } else {
+            spectate.defusing_progress.hide();
+        }
+    }
+
+    if (bomb_state_local == 'defusing') {
+        defusing_fill_bar();
+        for (let i = -20; i <= 20; i++) {
+            if (player_under_spec.steamid == (data.bomb.player + i)) {
+                defusing_spec(true);
+                break;
+            } else {
+                defusing_spec(false);
+            }
+        }
+    } else {
+        spectate.defusing_progress.hide();
+        spectate.defusing_timer_line.css('width', '0em');
+    }
 
     //white spec-border
     switch (player_under_spec.observer_slot) {
