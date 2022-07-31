@@ -55,10 +55,10 @@ app.get('/radar', (req, res) => {
 
 io.on('connection', (socket) => {
     connections.push(socket);
-        console.log('\x1b[33m' + socket.id + ' \x1b[36mconnected');
+        console.log('\x1b[33m' + socket.handshake.address.slice(7) + ' \x1b[36mconnected');
 
     socket.on('disconnect', () => {
-        console.log('\x1b[33m' + socket.id + ' \x1b[36mdisconneted');
+        console.log('\x1b[33m' + socket.handshake.address.slice(7) + ' \x1b[36mdisconneted');
     });
 
     socket.on('call_resethud', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hud_reset')}});
