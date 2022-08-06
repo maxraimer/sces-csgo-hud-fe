@@ -49,6 +49,7 @@ div {
     width: 2.5em;
     height: 2.5em;
     padding: 0.25em;
+    transform: scale(0.8);
 }
 
 #left_team_name {
@@ -245,6 +246,10 @@ div {
     padding: 0.25em;
 }
 
+#spec_team_logo {
+    transform: scale(0.8);
+}
+
 #spec_name {
     position: absolute;
     color: #fff;
@@ -386,7 +391,7 @@ div {
     width: 18em;
     height: 3.5em;
     box-shadow: 0 0 0em 0.15em #ffffff;
-    left: 0.5em;
+    left: 1em;
     top: 29em;
     white-space: nowrap;
     border-radius: 0.5em;
@@ -397,7 +402,7 @@ div {
 /* SIDEBARS */
 
 .team_info {
-    width: 18em;
+    width: 18.8em;
     height: 3.5em;
     background: var(--bg-secondary-color);
     top: 25em;
@@ -405,12 +410,12 @@ div {
 }
 
 #left_team_info {
-    left: 0.5em;
+    left: 0.2em;
     color: var(--color-one);
 }
 
 #right_team_info {
-    right: 0.5em;
+    right: 0.2em;
     color: var(--color-two);
 }
 
@@ -490,16 +495,24 @@ div {
     border-radius: 0.5em;
 }
 
-#p1 {left: 0.5em; top: 29em;}
-#p2 {left: 0.5em; top: 33em;}
-#p3 {left: 0.5em; top: 37em;}
-#p4 {left: 0.5em; top: 41em;}
-#p5 {left: 0.5em; top: 45em;}
-#p6 {right: 0.5em; top: 29em;}
-#p7 {right: 0.5em; top: 33em;}
-#p8 {right: 0.5em; top: 37em;}
-#p9 {right: 0.5em; top: 41em;}
-#p0 {right: 0.5em; top: 45em;}
+#p1 {left: 1em; top: 29em;}
+#p2 {left: 1em; top: 33em;}
+#p3 {left: 1em; top: 37em;}
+#p4 {left: 1em; top: 41em;}
+#p5 {left: 1em; top: 45em;}
+#p6 {right: 1em; top: 29em;}
+#p7 {right: 1em; top: 33em;}
+#p8 {right: 1em; top: 37em;}
+#p9 {right: 1em; top: 41em;}
+#p0 {right: 1em; top: 45em;}
+
+.player.left .side {
+    width: 0.6em;
+    height: 3.5em;
+    left: -0.8em;
+    background: dodgerblue;
+    border-radius: 0.5em;
+}
 
 .player.left .hp_text {
     width: 2.5em;
@@ -652,6 +665,14 @@ div {
     transform: scale(1.2);
     color: red;
     font-weight: 700;
+}
+
+.player.right .side {
+    width: 0.6em;
+    height: 3.5em;
+    right: -0.8em;
+    background: goldenrod;
+    border-radius: 0.5em;
 }
 
 .player.right .hp_text {

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    user-select: none;
+}
+
+#dot {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-color: red;
+    border-radius: 3em;
+    margin: 1em;
+    right: 0;
+    opacity: .8;
+}
