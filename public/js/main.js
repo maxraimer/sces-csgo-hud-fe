@@ -91,6 +91,7 @@ const sidebars = {
         team_equip_text: $('#right_team_info .team_equip_text'),
     },
     player1: {
+        side: $('#p1 .side'),
         nickname: $('#p1 .nickname'),
         hp_text: $('#p1 .hp_text'),
         hp_bar: $('#p1 .hp_bar'),
@@ -108,6 +109,7 @@ const sidebars = {
         spent_money: $('#p1 .spent_money')
     },
     player2: {
+        side: $('#p2 .side'),
         nickname: $('#p2 .nickname'),
         hp_text: $('#p2 .hp_text'),
         hp_bar: $('#p2 .hp_bar'),
@@ -125,6 +127,7 @@ const sidebars = {
         spent_money: $('#p2 .spent_money')
     },
     player3: {
+        side: $('#p3 .side'),
         nickname: $('#p3 .nickname'),
         hp_text: $('#p3 .hp_text'),
         hp_bar: $('#p3 .hp_bar'),
@@ -142,6 +145,7 @@ const sidebars = {
         spent_money: $('#p3 .spent_money')
     },
     player4: {
+        side: $('#p4 .side'),
         nickname: $('#p4 .nickname'),
         hp_text: $('#p4 .hp_text'),
         hp_bar: $('#p4 .hp_bar'),
@@ -159,6 +163,7 @@ const sidebars = {
         spent_money: $('#p4 .spent_money')
     },
     player5: {
+        side: $('#p5 .side'),
         nickname: $('#p5 .nickname'),
         hp_text: $('#p5 .hp_text'),
         hp_bar: $('#p5 .hp_bar'),
@@ -176,6 +181,7 @@ const sidebars = {
         spent_money: $('#p5 .spent_money')
     },
     player6: {
+        side: $('#p6 .side'),
         nickname: $('#p6 .nickname'),
         hp_text: $('#p6 .hp_text'),
         hp_bar: $('#p6 .hp_bar'),
@@ -193,6 +199,7 @@ const sidebars = {
         spent_money: $('#p6 .spent_money')
     },
     player7: {
+        side: $('#p7 .side'),
         nickname: $('#p7 .nickname'),
         hp_text: $('#p7 .hp_text'),
         hp_bar: $('#p7 .hp_bar'),
@@ -210,6 +217,7 @@ const sidebars = {
         spent_money: $('#p7 .spent_money')
     },
     player8: {
+        side: $('#p8 .side'),
         nickname: $('#p8 .nickname'),
         hp_text: $('#p8 .hp_text'),
         hp_bar: $('#p8 .hp_bar'),
@@ -227,6 +235,7 @@ const sidebars = {
         spent_money: $('#p8 .spent_money')
     },
     player9: {
+        side: $('#p9 .side'),
         nickname: $('#p9 .nickname'),
         hp_text: $('#p9 .hp_text'),
         hp_bar: $('#p9 .hp_bar'),
@@ -244,6 +253,7 @@ const sidebars = {
         spent_money: $('#p9 .spent_money')
     },
     player0: {
+        side: $('#p0 .side'),
         nickname: $('#p0 .nickname'),
         hp_text: $('#p0 .hp_text'),
         hp_bar: $('#p0 .hp_bar'),
@@ -376,7 +386,7 @@ function hud_set_default() {
     header.timers.bomb.hide();
     header.timers.defuse.hide();
     spectate.specbar.hide();
-    // spectate.defusing_progress.hide();
+    spectate.defusing_progress.hide();
     sidebars.kad_wrap.hide();
     sidebars.spent_money.hide();
     sidebars.kills_of_players.hide();
@@ -680,6 +690,7 @@ socket.on('getData', (data) => {
         players_money_after_round = [800,800,800,800,800,800,800,800,800,800];
 
         hide_winner_tab();
+	    spectate.who_is_under_spec.hide();
     }
 
 
@@ -880,8 +891,6 @@ socket.on('getData', (data) => {
 
     //name
     spectate.name.empty().append(player_under_spec.name);
-    //'whiting' logo
-    spectate.logo.css('filter', 'brightness(0) invert(1)');
     //kad
     spectate.kad.empty().append(`${player_under_spec.match_stats.kills}/${player_under_spec.match_stats.assists}/${player_under_spec.match_stats.deaths}`)
     //hp
@@ -899,21 +908,40 @@ socket.on('getData', (data) => {
         spectate.armor_svg.empty();
         spectate.armor.empty();
     }
+
     //spec-bar in total
-    if (player_under_spec.team == "CT") {
-        spectate.specbar.show();
-        spectate.primary.css('background', 'var(--color-one)');
-        spectate.logo.attr('src', '/img/logos/ct.png');
-
-    } else if (player_under_spec.team == "T") {
+    if (player_under_spec.team == "T") {
         spectate.specbar.show();
 
-        spectate.primary.css('background', 'var(--color-two)');
         spectate.logo.attr('src', '/img/logos/t.png');
+        spectate.primary.css('background', 'var(--color-two)');
+        spectate.logo.css('filter', 'brightness(0) invert(1)');
 
-    } else {
+        for (let i = 0; i < teams.length; i++) {
+            if (data.map.team_t.name && data.map.team_t.name.toUpperCase() == teams[i].name.toUpperCase()) {
+                spectate.logo.attr('src', teams[i].logo);
+                spectate.primary.css('background', teams[i].primary_color);
+                spectate.logo.css('filter', 'none');
+            }    
+        }
+    } else if (player_under_spec.team == "CT") {
+        spectate.specbar.show();
+
+        spectate.logo.attr('src', '/img/logos/ct.png');
+        spectate.primary.css('background', 'var(--color-one)');
+        spectate.logo.css('filter', 'brightness(0) invert(1)');
+
+        for (let i = 0; i < teams.length; i++) {
+            if (data.map.team_ct.name && data.map.team_ct.name.toUpperCase() == teams[i].name.toUpperCase()) {
+                spectate.logo.attr('src', teams[i].logo);
+                spectate.primary.css('background', teams[i].primary_color);
+                spectate.logo.css('filter', 'none');
+            }   
+        }
+    }  else {
         spectate.specbar.hide();
     }
+
     //weapon
     let player_under_spec_active_weapon = define_spec_active_weapon(player_under_spec.weapons);
 
@@ -998,52 +1026,52 @@ socket.on('getData', (data) => {
         case 1:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '29em');
-            spectate.who_is_under_spec.css('left', '0.5em');
+            spectate.who_is_under_spec.css('left', '1em');
             break;
         case 2:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '33em');
-            spectate.who_is_under_spec.css('left', '0.5em');
+            spectate.who_is_under_spec.css('left', '1em');
             break;
         case 3:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '37em');
-            spectate.who_is_under_spec.css('left', '0.5em');
+            spectate.who_is_under_spec.css('left', '1em');
             break;
         case 4:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '41em');
-            spectate.who_is_under_spec.css('left', '0.5em');
+            spectate.who_is_under_spec.css('left', '1em');
             break;
         case 5:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '45em');
-            spectate.who_is_under_spec.css('left', '0.5em');
+            spectate.who_is_under_spec.css('left', '1em');
             break;
         case 6:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '29em');
-            spectate.who_is_under_spec.css('left', '77.5em');
+            spectate.who_is_under_spec.css('left', '77em');
             break;
         case 7:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '33em');
-            spectate.who_is_under_spec.css('left', '77.5em');
+            spectate.who_is_under_spec.css('left', '77em');
             break;
         case 8:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '37em');
-            spectate.who_is_under_spec.css('left', '77.5em');
+            spectate.who_is_under_spec.css('left', '77em');
             break;
         case 9:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '41em');
-            spectate.who_is_under_spec.css('left', '77.5em');
+            spectate.who_is_under_spec.css('left', '77em');
             break;
         case 0:
             spectate.who_is_under_spec.show();
             spectate.who_is_under_spec.css('top', '45em');
-            spectate.who_is_under_spec.css('left', '77.5em');
+            spectate.who_is_under_spec.css('left', '77em');
             break;
         default:
             spectate.who_is_under_spec.hide();
@@ -1197,7 +1225,7 @@ socket.on('getData', (data) => {
     if (data.round.phase == 'freezetime' || data.phase_countdowns.phase == 'freezetime') {
         // sidebars.team_info.show();
         sidebars.team_info.animate({
-            width: '18em'
+            width: '18.8em'
         }, 1000);
         sidebars.left_team_info.team_equip_text.fadeIn();
         sidebars.left_team_info.team_equip_value.fadeIn();
@@ -1235,6 +1263,12 @@ socket.on('getData', (data) => {
             $(`#p${i}`).show();
             
             let this_player = sidebars[`player${i}`];
+
+            if (local_players[`player_${i}`].team == 'CT') {
+                this_player.side.css('background', 'dodgerblue');
+            } else {
+                this_player.side.css('background', 'goldenrod');
+            }
 
             this_player.nickname.empty().append(local_players[`player_${i}`].name);
             this_player.hp_text.empty().append(local_players[`player_${i}`].state.health);

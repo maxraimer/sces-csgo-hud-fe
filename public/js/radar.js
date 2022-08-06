@@ -19,30 +19,39 @@ function define_map() {
             x_offset = 410;
             y_offset = 820;
             map_scale = 4.4;
+            break;
         case 'de_dust2':
             x_offset = 515;
             y_offset = 730;
             map_scale = 4.35;
+            break;
         case 'de_overpass':
             x_offset = 760;
             y_offset = 330;
             map_scale = 5.3;
+            break;
         case 'de_mirage':
             x_offset = 750;
             y_offset = 250;
             map_scale = 3.5;
+            break;
         case 'de_ancient':
             x_offset = 575;
             y_offset = 380;
             map_scale = 4;
+            break;
         case 'de_nuke':
             x_offset = 460;
             y_offset = 380;
             map_scale = 6.5;
+            break;
         case 'de_vertigo':
             x_offset = 930;
             y_offset = 410;
             map_scale = 2.85;
+            break;
+        default:
+            break;
     }
 }
 
@@ -91,36 +100,38 @@ socket.on('getData', (data) => {
     }
 
     for (let i = 0; i < 10; i++) {
-        let player_pos = local_players[`player_${i}`].position;
-        player_pos = player_pos.split(', ');
+        if (local_players[`player_${i}`] != '') {
+            let player_pos = local_players[`player_${i}`].position;
+            player_pos = player_pos.split(', ');
 
-        if ($(`.name#player${i}`).text() != local_players[`player_${i}`].name) {
-            $(`.name#player${i}`).empty().append(local_players[`player_${i}`].name);
-        }
-
-        if (local_players[`player_${i}`].team == 'CT') {
-            $(`.dot#player${i}`).css('background', 'var(--color-one)')
-            $(`.name#player${i}`).css('color', 'var(--color-one)');
-        } else if (local_players[`player_${i}`].team == 'T') {
-            $(`.dot#player${i}`).css('background', 'var(--color-two)')
-            $(`.name#player${i}`).css('color', 'var(--color-two)');
-        }
-
-        if (local_players[`player_${i}`].state.health <= 0) {
-            $(`.dot#player${i}`).fadeOut();
-            $(`.name#player${i}`).fadeOut();
-        } else {
-            $(`.dot#player${i}`).show();
-            $(`.dot#player${i}`).animate({
-                'top': `${y_offset - (player_pos[1] / map_scale)}px`,
-                'left': `${x_offset + (player_pos[0]/ map_scale)}px`
-            }, {duration: 200, easing: "linear" });
-            
-            $(`.name#player${i}`).show();
-            $(`.name#player${i}`).animate({
-                'top': `${y_offset - (player_pos[1] / map_scale)}px`,
-                'left': `${x_offset + (player_pos[0]/ map_scale)}px`
-            }, {duration: 200, easing: "linear" });
+            if ($(`.name#player${i}`).text() != local_players[`player_${i}`].name) {
+                $(`.name#player${i}`).empty().append(local_players[`player_${i}`].name);
+            }
+    
+            if (local_players[`player_${i}`].team == 'CT') {
+                $(`.dot#player${i}`).css('background', 'var(--color-one)')
+                $(`.name#player${i}`).css('color', 'var(--color-one)');
+            } else if (local_players[`player_${i}`].team == 'T') {
+                $(`.dot#player${i}`).css('background', 'var(--color-two)')
+                $(`.name#player${i}`).css('color', 'var(--color-two)');
+            }
+    
+            if (local_players[`player_${i}`].state.health <= 0) {
+                $(`.dot#player${i}`).fadeOut();
+                $(`.name#player${i}`).fadeOut();
+            } else {
+                $(`.dot#player${i}`).show();
+                $(`.dot#player${i}`).css({
+                    'top': `${y_offset - (player_pos[1] / map_scale)}px`,
+                    'left': `${x_offset + (player_pos[0]/ map_scale)}px`
+                });
+                
+                $(`.name#player${i}`).show();
+                $(`.name#player${i}`).css({
+                    'top': `${y_offset - (player_pos[1] / map_scale)}px`,
+                    'left': `${x_offset + (player_pos[0]/ map_scale)}px`
+                });
+            }
         }
     }
 
