@@ -51,14 +51,17 @@ app.get('/radar', (req, res) => {
     res.sendFile(__dirname + '/radar.html');
 });
 
+app.get('/dots', (req, res) => {
+    res.sendFile(__dirname + '/dots.html');
+});
 
 
 io.on('connection', (socket) => {
     connections.push(socket);
-        console.log('\x1b[33m' + socket.handshake.address.slice(7) + ' \x1b[36mconnected');
+        console.log('\x1b[36m' + socket.handshake.address.slice(7) + ' \x1b[32mconnected');
 
     socket.on('disconnect', () => {
-        console.log('\x1b[33m' + socket.handshake.address.slice(7) + ' \x1b[36mdisconneted');
+        console.log('\x1b[36m' + socket.handshake.address.slice(7) + ' \x1b[31mdisconneted');
     });
 
     socket.on('call_resethud', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hud_reset')}});
@@ -66,6 +69,16 @@ io.on('connection', (socket) => {
     socket.on('call_hide_winrounds', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hide_winrounds'); connections[i].emit('checkState', 'winrounds', false)}});
     socket.on('call_show_losebonus', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_show_losebonus'); connections[i].emit('checkState', 'losebonus', true)}});
     socket.on('call_hide_losebonus', () => {for (let i = 0; i < connections.length; i++) {connections[i].emit('fn_hide_losebonus'); connections[i].emit('checkState', 'losebonus', false)}});
+    socket.on('dot_on', () => {
+        for (let i = 0; i < connections.length; i++) {
+            connections[i].emit('fn_show_dot');
+        }
+    });
+    socket.on('dot_off', () => {
+        for (let i = 0; i < connections.length; i++) {
+            connections[i].emit('fn_hide_dot');
+        }
+    });
 });
 
 server.listen(3000, () => {
