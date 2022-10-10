@@ -15,7 +15,7 @@
     },
     {
         "id": 3,
-        "name": "KHNEU Gods",
+        "name": "KHNEUgods",
         "primary_color": "#eabb01",
         "secondary_color": "#a38200",
         "logo": "/img/logos/kg.png"
@@ -36,16 +36,23 @@
     },
     {
         "id": 6,
-        "name": "Team Ananasiki",
-        "primary_color": "#4cc15f",
-        "secondary_color": "#a65e17",
-        "logo": "/img/logos/anasiki.png"
+        "name": "EC Kharkiv",
+        "primary_color": "#00af00",
+        "secondary_color": "#007700",
+        "logo": "/img/logos/eckh.png"
     },
     {
         "id": 7,
-        "name": "Team Arbuziki",
-        "primary_color": "#00bf00",
-        "secondary_color": "#006600",
-        "logo": "/img/logos/arbuziki.png"
+        "name": "TotalDom1nation",
+        "primary_color": "#ef1a23",
+        "secondary_color": "#bf1e2d",
+        "logo": "/img/logos/ttdm.png"
+    },
+    {
+        "id": 8,
+        "name": "0CHANCE",
+        "primary_color": "#ff7070",
+        "secondary_color": "#994343",
+        "logo": "/img/logos/0ch.png"
     }
 ]

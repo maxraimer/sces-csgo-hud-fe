@@ -21,8 +21,10 @@ app.get('/teams', (req, res) => {
     res.sendFile(__dirname + '/public/js/teams.json');
 });
 
+
 app.post('/', (req, res) => {
     let date = new Date();
+
     console.log(`\x1b[32m[${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}]` + "\x1b[36m>>> Updating data from CS:GO...");
     
     res.writeHead(200, {'Content-Type': 'text/html'});
@@ -81,6 +83,6 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+server.listen(3001, () => {
+  console.log('listening on *:3001');
 });
