@@ -20,7 +20,7 @@ import { BombPlanting, playAnimationPlantingBomb } from '../components/BombPlant
 import { SpectatedPlayer } from '../components/SpectatedPlayer';
 
 const { io } = require('socket.io-client')
-const socket = io('http://176.108.2.93:3000/', {
+const socket = io('http://***.***.***.***:3000/', {
   auth: {token: 'test123'}
 });
 
