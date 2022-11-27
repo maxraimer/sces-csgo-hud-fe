@@ -2,7 +2,7 @@ import {React, useEffect, useState} from 'react'
 import { Tab } from '../components/Tab'
 
 const { io } = require('socket.io-client')
-const socket = io('http://176.108.2.93:3000/');
+const socket = io('http://***.***.***.***:3000/');
 
 export function TabPage() {
     const [tab, setTab] = useState();
