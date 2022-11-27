@@ -1,0 +1,2610 @@
+{
+    "timestamp": 1668642980,
+    "provider": {
+        "name": "Counter-Strike: Global Offensive",
+        "appid": 730,
+        "version": 13847,
+        "steamid": "76561198152104192"
+    },
+    "map_info": {
+        "mode": "competitive",
+        "name": "de_mirage",
+        "status": "live",
+        "round": 13,
+        "spectators_count": 0,
+        "souvenirs_total": 0,
+        "index_in_series": 0,
+        "format": 1
+    },
+    "map_data": {
+        "round_info": {
+            "phase": "live",
+            "secondary_phase": "live",
+            "countdown": "32.0"
+        },
+        "round_history": [
+            {
+                "round": 5,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    2
+                ]
+            },
+            {
+                "round": 6,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "round": 7,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    3
+                ]
+            },
+            {
+                "round": 8,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    3
+                ]
+            },
+            {
+                "round": 9,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    3
+                ]
+            },
+            {
+                "round": 10,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "round": 11,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "elimination",
+                "players_alive": [
+                    0,
+                    5
+                ]
+            },
+            {
+                "round": 12,
+                "team_side": "T",
+                "team_name": "T",
+                "win_condition": "bomb",
+                "players_alive": [
+                    1,
+                    2
+                ]
+            }
+        ],
+        "grenades_history": []
+    },
+    "spectated_player": {
+        "steamid": "76561197960265734",
+        "name": "Kyle",
+        "observer_slot": 4,
+        "team_slot": 3,
+        "cam_url": "",
+        "team": "CT",
+        "state": {
+            "alive": true,
+            "health": 53,
+            "armor": 99,
+            "armor_type": 2,
+            "flashed": 0,
+            "smoked": 0,
+            "burning": 0,
+            "money": 300
+        },
+        "round_stats": {
+            "kills": 1,
+            "headshots": 0,
+            "damage": 100
+        },
+        "map_stats": {
+            "kills": 4,
+            "headshots": 0,
+            "damage": 0,
+            "assists": 2,
+            "deaths": 9,
+            "kdr": "0.00",
+            "kpr": "0.33",
+            "adr": "0.00",
+            "hsp": 0,
+            "mvps": 1,
+            "score": 10
+        },
+        "loadout": {
+            "active": {
+                "name": "weapon_awp",
+                "type": "sniper_rifle",
+                "paintkit": "default",
+                "isActive": true,
+                "hasAmmo": true,
+                "ammo_clip": 8,
+                "ammo_clip_max": 10,
+                "ammo_reserve": 30
+            },
+            "activeType": "",
+            "hasPrimary": true,
+            "primary": {
+                "name": "weapon_awp",
+                "type": "sniper_rifle",
+                "paintkit": "default",
+                "isActive": true,
+                "hasAmmo": true,
+                "ammo_clip": 8,
+                "ammo_clip_max": 10,
+                "ammo_reserve": 30
+            },
+            "hasSecondary": true,
+            "secondary": {
+                "name": "weapon_hkp2000",
+                "type": "pistol",
+                "paintkit": "default",
+                "isActive": false,
+                "hasAmmo": true,
+                "ammo_clip": 13,
+                "ammo_clip_max": 13,
+                "ammo_reserve": 52
+            },
+            "hasKnife": true,
+            "knife": {
+                "name": "weapon_knife",
+                "type": "knife",
+                "paintkit": "default",
+                "isActive": false,
+                "hasAmmo": false,
+                "ammo_clip": 0,
+                "ammo_clip_max": 0,
+                "ammo_reserve": 0
+            },
+            "hasTaser": false,
+            "taser": {
+                "name": "",
+                "type": "",
+                "paintkit": "",
+                "isActive": false,
+                "hasAmmo": false,
+                "ammo_clip": 0,
+                "ammo_clip_max": 0,
+                "ammo_reserve": 0
+            },
+            "hasGrenades": false,
+            "grenades": {
+                "flashbang": 0,
+                "he": 1,
+                "molotov": 0,
+                "incendiary": 0,
+                "decoy": 0,
+                "smoke": 0
+            },
+            "hasBomb": false,
+            "equip_value": 6250
+        },
+        "position": {
+            "x": "-782.33",
+            "y": "-1451.19",
+            "z": "-167.97"
+        },
+        "gaze_direction": {
+            "x": "0.472",
+            "y": "-0.880",
+            "z": "-0.059"
+        },
+        "activeType": "primary",
+        "team_index": 0
+    },
+    "teams": [
+        {
+            "name": "CT",
+            "score": 3,
+            "match_score": 0,
+            "consecutive_round_wins": 0,
+            "team_on_fire": false,
+            "consecutive_round_losses": 9,
+            "lossbonus_count": 4,
+            "timeouts_remaining": 1,
+            "team_side": "CT",
+            "players_alive": 4,
+            "equip_value": 21200,
+            "total_balance": 3900,
+            "grenades_count": {
+                "flashbang": 0,
+                "he": 1,
+                "molotov": 0,
+                "incendiary": 0,
+                "decoy": 0,
+                "smoke": 0
+            },
+            "grenades_evaluation": "Poor",
+            "players": [
+                {
+                    "steamid": "2",
+                    "name": "Arnold",
+                    "observer_slot": 1,
+                    "team_slot": 0,
+                    "cam_url": "",
+                    "team": "CT",
+                    "state": {
+                        "alive": true,
+                        "health": 100,
+                        "armor": 100,
+                        "armor_type": 2,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 200
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 0
+                    },
+                    "map_stats": {
+                        "kills": 5,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 5,
+                        "deaths": 10,
+                        "kdr": "0.00",
+                        "kpr": "0.42",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 1,
+                        "score": 15
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "weapon_m4a1",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 23,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "activeType": "",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_m4a1",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 23,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_hkp2000",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 13,
+                            "ammo_clip_max": 13,
+                            "ammo_reserve": 52
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 4300
+                    },
+                    "position": {
+                        "x": "-685.18",
+                        "y": "-1488.97",
+                        "z": "-167.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.458",
+                        "y": "-0.886",
+                        "z": "-0.066"
+                    },
+                    "activeType": "primary",
+                    "team_index": 0
+                },
+                {
+                    "steamid": "76561197960265729",
+                    "name": "Brett",
+                    "observer_slot": 2,
+                    "team_slot": 1,
+                    "cam_url": "",
+                    "team": "CT",
+                    "state": {
+                        "alive": true,
+                        "health": 84,
+                        "armor": 100,
+                        "armor_type": 1,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 150
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 0
+                    },
+                    "map_stats": {
+                        "kills": 8,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 3,
+                        "deaths": 10,
+                        "kdr": "0.00",
+                        "kpr": "0.67",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 1,
+                        "score": 23
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "weapon_m4a1",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 29,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "activeType": "",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_m4a1",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 29,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_hkp2000",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 13,
+                            "ammo_clip_max": 13,
+                            "ammo_reserve": 52
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 3950
+                    },
+                    "position": {
+                        "x": "-825.13",
+                        "y": "-1368.54",
+                        "z": "-167.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.599",
+                        "y": "-0.797",
+                        "z": "-0.079"
+                    },
+                    "activeType": "primary",
+                    "team_index": 0
+                },
+                {
+                    "steamid": "76561197960265731",
+                    "name": "Ridgway",
+                    "observer_slot": 3,
+                    "team_slot": 2,
+                    "cam_url": "",
+                    "team": "CT",
+                    "state": {
+                        "alive": true,
+                        "health": 100,
+                        "armor": 0,
+                        "armor_type": 0,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 100
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 0
+                    },
+                    "map_stats": {
+                        "kills": 11,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 3,
+                        "deaths": 10,
+                        "kdr": "0.00",
+                        "kpr": "0.92",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 0,
+                        "score": 26
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "weapon_aug",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 19,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "activeType": "",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_aug",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 19,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_hkp2000",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 13,
+                            "ammo_clip_max": 13,
+                            "ammo_reserve": 52
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 3500
+                    },
+                    "position": {
+                        "x": "-619.56",
+                        "y": "-1545.08",
+                        "z": "-167.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.344",
+                        "y": "-0.933",
+                        "z": "-0.111"
+                    },
+                    "activeType": "primary",
+                    "team_index": 0
+                },
+                {
+                    "steamid": "76561197960265734",
+                    "name": "Kyle",
+                    "observer_slot": 4,
+                    "team_slot": 3,
+                    "cam_url": "",
+                    "team": "CT",
+                    "state": {
+                        "alive": true,
+                        "health": 53,
+                        "armor": 99,
+                        "armor_type": 2,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 300
+                    },
+                    "round_stats": {
+                        "kills": 1,
+                        "headshots": 0,
+                        "damage": 100
+                    },
+                    "map_stats": {
+                        "kills": 4,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 2,
+                        "deaths": 9,
+                        "kdr": "0.00",
+                        "kpr": "0.33",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 1,
+                        "score": 10
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "weapon_awp",
+                            "type": "sniper_rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 8,
+                            "ammo_clip_max": 10,
+                            "ammo_reserve": 30
+                        },
+                        "activeType": "",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_awp",
+                            "type": "sniper_rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 8,
+                            "ammo_clip_max": 10,
+                            "ammo_reserve": 30
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_hkp2000",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 13,
+                            "ammo_clip_max": 13,
+                            "ammo_reserve": 52
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 1,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 6250
+                    },
+                    "position": {
+                        "x": "-782.33",
+                        "y": "-1451.19",
+                        "z": "-167.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.472",
+                        "y": "-0.880",
+                        "z": "-0.059"
+                    },
+                    "activeType": "primary",
+                    "team_index": 0
+                },
+                {
+                    "steamid": "76561197960265736",
+                    "name": "Crusher",
+                    "observer_slot": 5,
+                    "team_slot": 4,
+                    "cam_url": "",
+                    "team": "CT",
+                    "state": {
+                        "alive": false,
+                        "health": 0,
+                        "armor": 0,
+                        "armor_type": 0,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 3150
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 77
+                    },
+                    "map_stats": {
+                        "kills": 6,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 3,
+                        "deaths": 12,
+                        "kdr": "0.00",
+                        "kpr": "0.50",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 0,
+                        "score": 15
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "activeType": "",
+                        "hasPrimary": false,
+                        "primary": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasSecondary": false,
+                        "secondary": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasKnife": false,
+                        "knife": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 3200
+                    },
+                    "position": {
+                        "x": "-709.97",
+                        "y": "-1265.70",
+                        "z": "-167.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.380",
+                        "y": "-0.921",
+                        "z": "-0.088"
+                    },
+                    "activeType": "secondary",
+                    "team_index": 0
+                }
+            ]
+        },
+        {
+            "name": "T",
+            "score": 9,
+            "match_score": 0,
+            "consecutive_round_wins": 8,
+            "team_on_fire": false,
+            "consecutive_round_losses": 0,
+            "lossbonus_count": 0,
+            "timeouts_remaining": 1,
+            "team_side": "T",
+            "players_alive": 4,
+            "equip_value": 23350,
+            "total_balance": 58650,
+            "grenades_count": {
+                "flashbang": 0,
+                "he": 0,
+                "molotov": 0,
+                "incendiary": 0,
+                "decoy": 0,
+                "smoke": 2
+            },
+            "grenades_evaluation": "Poor",
+            "players": [
+                {
+                    "steamid": "76561197960265730",
+                    "name": "Shark",
+                    "observer_slot": 6,
+                    "team_slot": 0,
+                    "cam_url": "",
+                    "team": "T",
+                    "state": {
+                        "alive": true,
+                        "health": 62,
+                        "armor": 80,
+                        "armor_type": 2,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 8150
+                    },
+                    "round_stats": {
+                        "kills": 1,
+                        "headshots": 0,
+                        "damage": 24
+                    },
+                    "map_stats": {
+                        "kills": 10,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 2,
+                        "deaths": 8,
+                        "kdr": "0.00",
+                        "kpr": "0.83",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 1,
+                        "score": 32
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "activeType": "smoke",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_sg556",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 25,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_glock",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 20,
+                            "ammo_clip_max": 20,
+                            "ammo_reserve": 120
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife_t",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 1
+                        },
+                        "hasBomb": false,
+                        "equip_value": 4500
+                    },
+                    "position": {
+                        "x": "-269.28",
+                        "y": "-1504.13",
+                        "z": "-163.98"
+                    },
+                    "gaze_direction": {
+                        "x": "-0.671",
+                        "y": "-0.734",
+                        "z": "-0.105"
+                    },
+                    "activeType": "primary",
+                    "team_index": 1
+                },
+                {
+                    "steamid": "76561197960265732",
+                    "name": "Garret",
+                    "observer_slot": 7,
+                    "team_slot": 1,
+                    "cam_url": "",
+                    "team": "T",
+                    "state": {
+                        "alive": true,
+                        "health": 100,
+                        "armor": 100,
+                        "armor_type": 2,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 15350
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 21
+                    },
+                    "map_stats": {
+                        "kills": 10,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 1,
+                        "deaths": 5,
+                        "kdr": "0.00",
+                        "kpr": "0.83",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 2,
+                        "score": 26
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "weapon_sg556",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 28,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "activeType": "",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_sg556",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 28,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_glock",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 20,
+                            "ammo_clip_max": 20,
+                            "ammo_reserve": 120
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife_t",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 4200
+                    },
+                    "position": {
+                        "x": "142.79",
+                        "y": "-1970.02",
+                        "z": "-76.61"
+                    },
+                    "gaze_direction": {
+                        "x": "-0.093",
+                        "y": "-0.491",
+                        "z": "0.866"
+                    },
+                    "activeType": "primary",
+                    "team_index": 1
+                },
+                {
+                    "steamid": "76561197960265733",
+                    "name": "Gunner",
+                    "observer_slot": 8,
+                    "team_slot": 2,
+                    "cam_url": "",
+                    "team": "T",
+                    "state": {
+                        "alive": true,
+                        "health": 100,
+                        "armor": 100,
+                        "armor_type": 2,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 11600
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 42
+                    },
+                    "map_stats": {
+                        "kills": 10,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 5,
+                        "deaths": 7,
+                        "kdr": "0.00",
+                        "kpr": "0.83",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 2,
+                        "score": 30
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "weapon_ak47",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 28,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "activeType": "",
+                        "hasPrimary": true,
+                        "primary": {
+                            "name": "weapon_ak47",
+                            "type": "rifle",
+                            "paintkit": "default",
+                            "isActive": true,
+                            "hasAmmo": true,
+                            "ammo_clip": 28,
+                            "ammo_clip_max": 30,
+                            "ammo_reserve": 90
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_deagle",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 7,
+                            "ammo_clip_max": 7,
+                            "ammo_reserve": 35
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife_t",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 4400
+                    },
+                    "position": {
+                        "x": "-514.04",
+                        "y": "-1874.04",
+                        "z": "-179.97"
+                    },
+                    "gaze_direction": {
+                        "x": "-0.384",
+                        "y": "0.922",
+                        "z": "-0.048"
+                    },
+                    "activeType": "primary",
+                    "team_index": 1
+                },
+                {
+                    "steamid": "76561197960265735",
+                    "name": "Minh",
+                    "observer_slot": 9,
+                    "team_slot": 3,
+                    "cam_url": "",
+                    "team": "T",
+                    "state": {
+                        "alive": false,
+                        "health": 0,
+                        "armor": 0,
+                        "armor_type": 0,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 15350
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 0
+                    },
+                    "map_stats": {
+                        "kills": 7,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 3,
+                        "deaths": 8,
+                        "kdr": "0.00",
+                        "kpr": "0.58",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 0,
+                        "score": 21
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "activeType": "",
+                        "hasPrimary": false,
+                        "primary": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasSecondary": false,
+                        "secondary": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasKnife": false,
+                        "knife": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 3850
+                    },
+                    "position": {
+                        "x": "-737.40",
+                        "y": "-2227.56",
+                        "z": "-179.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.058",
+                        "y": "0.998",
+                        "z": "-0.022"
+                    },
+                    "activeType": "primary",
+                    "team_index": 1
+                },
+                {
+                    "steamid": "76561197960265737",
+                    "name": "Rock",
+                    "observer_slot": 0,
+                    "team_slot": 4,
+                    "cam_url": "",
+                    "team": "T",
+                    "state": {
+                        "alive": true,
+                        "health": 61,
+                        "armor": 91,
+                        "armor_type": 2,
+                        "flashed": 0,
+                        "smoked": 0,
+                        "burning": 0,
+                        "money": 8200
+                    },
+                    "round_stats": {
+                        "kills": 0,
+                        "headshots": 0,
+                        "damage": 76
+                    },
+                    "map_stats": {
+                        "kills": 13,
+                        "headshots": 0,
+                        "damage": 0,
+                        "assists": 4,
+                        "deaths": 7,
+                        "kdr": "0.00",
+                        "kpr": "1.08",
+                        "adr": "0.00",
+                        "hsp": 0,
+                        "mvps": 4,
+                        "score": 41
+                    },
+                    "loadout": {
+                        "active": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "activeType": "",
+                        "hasPrimary": false,
+                        "primary": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasSecondary": true,
+                        "secondary": {
+                            "name": "weapon_glock",
+                            "type": "pistol",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": true,
+                            "ammo_clip": 20,
+                            "ammo_clip_max": 20,
+                            "ammo_reserve": 120
+                        },
+                        "hasKnife": true,
+                        "knife": {
+                            "name": "weapon_knife_t",
+                            "type": "knife",
+                            "paintkit": "default",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasTaser": false,
+                        "taser": {
+                            "name": "",
+                            "type": "",
+                            "paintkit": "",
+                            "isActive": false,
+                            "hasAmmo": false,
+                            "ammo_clip": 0,
+                            "ammo_clip_max": 0,
+                            "ammo_reserve": 0
+                        },
+                        "hasGrenades": false,
+                        "grenades": {
+                            "flashbang": 0,
+                            "he": 0,
+                            "molotov": 0,
+                            "incendiary": 0,
+                            "decoy": 0,
+                            "smoke": 0
+                        },
+                        "hasBomb": false,
+                        "equip_value": 6400
+                    },
+                    "position": {
+                        "x": "-961.11",
+                        "y": "-2544.43",
+                        "z": "-167.97"
+                    },
+                    "gaze_direction": {
+                        "x": "0.320",
+                        "y": "0.947",
+                        "z": "-0.023"
+                    },
+                    "team_index": 1,
+                    "activeType": "knife"
+                }
+            ]
+        }
+    ],
+    "all_players": [
+        {
+            "steamid": "2",
+            "name": "Arnold",
+            "observer_slot": 1,
+            "team_slot": 0,
+            "cam_url": "",
+            "team": "CT",
+            "state": {
+                "alive": true,
+                "health": 100,
+                "armor": 100,
+                "armor_type": 2,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 200
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 0
+            },
+            "map_stats": {
+                "kills": 5,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 5,
+                "deaths": 10,
+                "kdr": "0.00",
+                "kpr": "0.42",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 1,
+                "score": 15
+            },
+            "loadout": {
+                "active": {
+                    "name": "weapon_m4a1",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 23,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "activeType": "",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_m4a1",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 23,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_hkp2000",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 13,
+                    "ammo_clip_max": 13,
+                    "ammo_reserve": 52
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 4300
+            },
+            "position": {
+                "x": "-685.18",
+                "y": "-1488.97",
+                "z": "-167.97"
+            },
+            "gaze_direction": {
+                "x": "0.458",
+                "y": "-0.886",
+                "z": "-0.066"
+            },
+            "activeType": "primary",
+            "team_index": 0
+        },
+        {
+            "steamid": "76561197960265729",
+            "name": "Brett",
+            "observer_slot": 2,
+            "team_slot": 1,
+            "cam_url": "",
+            "team": "CT",
+            "state": {
+                "alive": true,
+                "health": 84,
+                "armor": 100,
+                "armor_type": 1,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 150
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 0
+            },
+            "map_stats": {
+                "kills": 8,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 3,
+                "deaths": 10,
+                "kdr": "0.00",
+                "kpr": "0.67",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 1,
+                "score": 23
+            },
+            "loadout": {
+                "active": {
+                    "name": "weapon_m4a1",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 29,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "activeType": "",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_m4a1",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 29,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_hkp2000",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 13,
+                    "ammo_clip_max": 13,
+                    "ammo_reserve": 52
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 3950
+            },
+            "position": {
+                "x": "-825.13",
+                "y": "-1368.54",
+                "z": "-167.97"
+            },
+            "gaze_direction": {
+                "x": "0.599",
+                "y": "-0.797",
+                "z": "-0.079"
+            },
+            "activeType": "primary",
+            "team_index": 0
+        },
+        {
+            "steamid": "76561197960265731",
+            "name": "Ridgway",
+            "observer_slot": 3,
+            "team_slot": 2,
+            "cam_url": "",
+            "team": "CT",
+            "state": {
+                "alive": true,
+                "health": 100,
+                "armor": 0,
+                "armor_type": 0,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 100
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 0
+            },
+            "map_stats": {
+                "kills": 11,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 3,
+                "deaths": 10,
+                "kdr": "0.00",
+                "kpr": "0.92",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 0,
+                "score": 26
+            },
+            "loadout": {
+                "active": {
+                    "name": "weapon_aug",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 19,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "activeType": "",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_aug",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 19,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_hkp2000",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 13,
+                    "ammo_clip_max": 13,
+                    "ammo_reserve": 52
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 3500
+            },
+            "position": {
+                "x": "-619.56",
+                "y": "-1545.08",
+                "z": "-167.97"
+            },
+            "gaze_direction": {
+                "x": "0.344",
+                "y": "-0.933",
+                "z": "-0.111"
+            },
+            "activeType": "primary",
+            "team_index": 0
+        },
+        {
+            "steamid": "76561197960265734",
+            "name": "Kyle",
+            "observer_slot": 4,
+            "team_slot": 3,
+            "cam_url": "",
+            "team": "CT",
+            "state": {
+                "alive": true,
+                "health": 53,
+                "armor": 99,
+                "armor_type": 2,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 300
+            },
+            "round_stats": {
+                "kills": 1,
+                "headshots": 0,
+                "damage": 100
+            },
+            "map_stats": {
+                "kills": 4,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 2,
+                "deaths": 9,
+                "kdr": "0.00",
+                "kpr": "0.33",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 1,
+                "score": 10
+            },
+            "loadout": {
+                "active": {
+                    "name": "weapon_awp",
+                    "type": "sniper_rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 8,
+                    "ammo_clip_max": 10,
+                    "ammo_reserve": 30
+                },
+                "activeType": "",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_awp",
+                    "type": "sniper_rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 8,
+                    "ammo_clip_max": 10,
+                    "ammo_reserve": 30
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_hkp2000",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 13,
+                    "ammo_clip_max": 13,
+                    "ammo_reserve": 52
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 1,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 6250
+            },
+            "position": {
+                "x": "-782.33",
+                "y": "-1451.19",
+                "z": "-167.97"
+            },
+            "gaze_direction": {
+                "x": "0.472",
+                "y": "-0.880",
+                "z": "-0.059"
+            },
+            "activeType": "primary",
+            "team_index": 0
+        },
+        {
+            "steamid": "76561197960265736",
+            "name": "Crusher",
+            "observer_slot": 5,
+            "team_slot": 4,
+            "cam_url": "",
+            "team": "CT",
+            "state": {
+                "alive": false,
+                "health": 0,
+                "armor": 0,
+                "armor_type": 0,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 3150
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 77
+            },
+            "map_stats": {
+                "kills": 6,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 3,
+                "deaths": 12,
+                "kdr": "0.00",
+                "kpr": "0.50",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 0,
+                "score": 15
+            },
+            "loadout": {
+                "active": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "activeType": "",
+                "hasPrimary": false,
+                "primary": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasSecondary": false,
+                "secondary": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasKnife": false,
+                "knife": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 3200
+            },
+            "position": {
+                "x": "-709.97",
+                "y": "-1265.70",
+                "z": "-167.97"
+            },
+            "gaze_direction": {
+                "x": "0.380",
+                "y": "-0.921",
+                "z": "-0.088"
+            },
+            "activeType": "secondary",
+            "team_index": 0
+        },
+        {
+            "steamid": "76561197960265730",
+            "name": "Shark",
+            "observer_slot": 6,
+            "team_slot": 0,
+            "cam_url": "",
+            "team": "T",
+            "state": {
+                "alive": true,
+                "health": 62,
+                "armor": 80,
+                "armor_type": 2,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 8150
+            },
+            "round_stats": {
+                "kills": 1,
+                "headshots": 0,
+                "damage": 24
+            },
+            "map_stats": {
+                "kills": 10,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 2,
+                "deaths": 8,
+                "kdr": "0.00",
+                "kpr": "0.83",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 1,
+                "score": 32
+            },
+            "loadout": {
+                "active": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "activeType": "smoke",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_sg556",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 25,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_glock",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 20,
+                    "ammo_clip_max": 20,
+                    "ammo_reserve": 120
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife_t",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 1
+                },
+                "hasBomb": false,
+                "equip_value": 4500
+            },
+            "position": {
+                "x": "-269.28",
+                "y": "-1504.13",
+                "z": "-163.98"
+            },
+            "gaze_direction": {
+                "x": "-0.671",
+                "y": "-0.734",
+                "z": "-0.105"
+            },
+            "activeType": "primary",
+            "team_index": 1
+        },
+        {
+            "steamid": "76561197960265732",
+            "name": "Garret",
+            "observer_slot": 7,
+            "team_slot": 1,
+            "cam_url": "",
+            "team": "T",
+            "state": {
+                "alive": true,
+                "health": 100,
+                "armor": 100,
+                "armor_type": 2,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 15350
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 21
+            },
+            "map_stats": {
+                "kills": 10,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 1,
+                "deaths": 5,
+                "kdr": "0.00",
+                "kpr": "0.83",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 2,
+                "score": 26
+            },
+            "loadout": {
+                "active": {
+                    "name": "weapon_sg556",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 28,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "activeType": "",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_sg556",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 28,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_glock",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 20,
+                    "ammo_clip_max": 20,
+                    "ammo_reserve": 120
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife_t",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 4200
+            },
+            "position": {
+                "x": "142.79",
+                "y": "-1970.02",
+                "z": "-76.61"
+            },
+            "gaze_direction": {
+                "x": "-0.093",
+                "y": "-0.491",
+                "z": "0.866"
+            },
+            "activeType": "primary",
+            "team_index": 1
+        },
+        {
+            "steamid": "76561197960265733",
+            "name": "Gunner",
+            "observer_slot": 8,
+            "team_slot": 2,
+            "cam_url": "",
+            "team": "T",
+            "state": {
+                "alive": true,
+                "health": 100,
+                "armor": 100,
+                "armor_type": 2,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 11600
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 42
+            },
+            "map_stats": {
+                "kills": 10,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 5,
+                "deaths": 7,
+                "kdr": "0.00",
+                "kpr": "0.83",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 2,
+                "score": 30
+            },
+            "loadout": {
+                "active": {
+                    "name": "weapon_ak47",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 28,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "activeType": "",
+                "hasPrimary": true,
+                "primary": {
+                    "name": "weapon_ak47",
+                    "type": "rifle",
+                    "paintkit": "default",
+                    "isActive": true,
+                    "hasAmmo": true,
+                    "ammo_clip": 28,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 90
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_deagle",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 7,
+                    "ammo_clip_max": 7,
+                    "ammo_reserve": 35
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife_t",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 4400
+            },
+            "position": {
+                "x": "-514.04",
+                "y": "-1874.04",
+                "z": "-179.97"
+            },
+            "gaze_direction": {
+                "x": "-0.384",
+                "y": "0.922",
+                "z": "-0.048"
+            },
+            "activeType": "primary",
+            "team_index": 1
+        },
+        {
+            "steamid": "76561197960265735",
+            "name": "Minh",
+            "observer_slot": 9,
+            "team_slot": 3,
+            "cam_url": "",
+            "team": "T",
+            "state": {
+                "alive": false,
+                "health": 0,
+                "armor": 0,
+                "armor_type": 0,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 15350
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 0
+            },
+            "map_stats": {
+                "kills": 7,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 3,
+                "deaths": 8,
+                "kdr": "0.00",
+                "kpr": "0.58",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 0,
+                "score": 21
+            },
+            "loadout": {
+                "active": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "activeType": "",
+                "hasPrimary": false,
+                "primary": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasSecondary": false,
+                "secondary": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasKnife": false,
+                "knife": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 3850
+            },
+            "position": {
+                "x": "-737.40",
+                "y": "-2227.56",
+                "z": "-179.97"
+            },
+            "gaze_direction": {
+                "x": "0.058",
+                "y": "0.998",
+                "z": "-0.022"
+            },
+            "activeType": "primary",
+            "team_index": 1
+        },
+        {
+            "steamid": "76561197960265737",
+            "name": "Rock",
+            "observer_slot": 0,
+            "team_slot": 4,
+            "cam_url": "",
+            "team": "T",
+            "state": {
+                "alive": true,
+                "health": 61,
+                "armor": 91,
+                "armor_type": 2,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 8200
+            },
+            "round_stats": {
+                "kills": 0,
+                "headshots": 0,
+                "damage": 76
+            },
+            "map_stats": {
+                "kills": 13,
+                "headshots": 0,
+                "damage": 0,
+                "assists": 4,
+                "deaths": 7,
+                "kdr": "0.00",
+                "kpr": "1.08",
+                "adr": "0.00",
+                "hsp": 0,
+                "mvps": 4,
+                "score": 41
+            },
+            "loadout": {
+                "active": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "activeType": "",
+                "hasPrimary": false,
+                "primary": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasSecondary": true,
+                "secondary": {
+                    "name": "weapon_glock",
+                    "type": "pistol",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": true,
+                    "ammo_clip": 20,
+                    "ammo_clip_max": 20,
+                    "ammo_reserve": 120
+                },
+                "hasKnife": true,
+                "knife": {
+                    "name": "weapon_knife_t",
+                    "type": "knife",
+                    "paintkit": "default",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasTaser": false,
+                "taser": {
+                    "name": "",
+                    "type": "",
+                    "paintkit": "",
+                    "isActive": false,
+                    "hasAmmo": false,
+                    "ammo_clip": 0,
+                    "ammo_clip_max": 0,
+                    "ammo_reserve": 0
+                },
+                "hasGrenades": false,
+                "grenades": {
+                    "flashbang": 0,
+                    "he": 0,
+                    "molotov": 0,
+                    "incendiary": 0,
+                    "decoy": 0,
+                    "smoke": 0
+                },
+                "hasBomb": false,
+                "equip_value": 6400
+            },
+            "position": {
+                "x": "-961.11",
+                "y": "-2544.43",
+                "z": "-167.97"
+            },
+            "gaze_direction": {
+                "x": "0.320",
+                "y": "0.947",
+                "z": "-0.023"
+            },
+            "team_index": 1,
+            "activeType": "knife"
+        }
+    ],
+    "grenades": [],
+    "bomb": {
+        "state": "planted",
+        "position": {
+            "x": "-388.88",
+            "y": "-2278.47",
+            "z": "-169.63"
+        },
+        "countdown": "32.016",
+        "steamid": ""
+    }
+}
